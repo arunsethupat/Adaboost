@@ -1,0 +1,459 @@
+Stage 0
+
+FPR: 0.1435
+DR: 0.954667
+Threshold: 1.13043
+Classifiers:
+
+WeakClassifier 0
+Error: 0.0944167
+Dimension: 39682
+Threshold: -242
+Alpha: 2.26086
+Beta: 0.104261
+Sign: POSITIVE
+Misclassified: 997
+
+---------------
+
+Stage 1
+
+FPR: 0.0695
+DR: 0.936667
+Threshold: 0.605444
+Classifiers:
+
+WeakClassifier 0
+Error: 0.0991109
+Dimension: 51728
+Threshold: -203
+Alpha: 2.20714
+Beta: 0.110015
+Sign: NEGATIVE
+Misclassified: 611
+
+WeakClassifier 1
+Error: 0.212036
+Dimension: 104700
+Threshold: -142
+Alpha: 1.3127
+Beta: 0.269093
+Sign: POSITIVE
+Misclassified: 823
+
+WeakClassifier 2
+Error: 0.301833
+Dimension: 102072
+Threshold: 63
+Alpha: 0.838585
+Beta: 0.432322
+Sign: NEGATIVE
+Misclassified: 1261
+
+WeakClassifier 3
+Error: 0.298916
+Dimension: 69632
+Threshold: 695
+Alpha: 0.852463
+Beta: 0.426363
+Sign: POSITIVE
+Misclassified: 993
+
+---------------
+
+Stage 2
+
+FPR: 0.0296667
+DR: 0.912667
+Threshold: 0.965314
+Classifiers:
+
+WeakClassifier 0
+Error: 0.0604644
+Dimension: 51355
+Threshold: 839
+Alpha: 2.74333
+Beta: 0.0643556
+Sign: POSITIVE
+Misclassified: 387
+
+WeakClassifier 1
+Error: 0.260148
+Dimension: 26036
+Threshold: -81
+Alpha: 1.0452
+Beta: 0.351621
+Sign: POSITIVE
+Misclassified: 984
+
+WeakClassifier 2
+Error: 0.304006
+Dimension: 102261
+Threshold: 167
+Alpha: 0.828294
+Beta: 0.436794
+Sign: NEGATIVE
+Misclassified: 897
+
+WeakClassifier 3
+Error: 0.324823
+Dimension: 103241
+Threshold: 58
+Alpha: 0.731695
+Beta: 0.481093
+Sign: NEGATIVE
+Misclassified: 1220
+
+WeakClassifier 4
+Error: 0.318156
+Dimension: 33727
+Threshold: 175
+Alpha: 0.762258
+Beta: 0.466612
+Sign: NEGATIVE
+Misclassified: 751
+
+WeakClassifier 5
+Error: 0.350541
+Dimension: 53445
+Threshold: 9
+Alpha: 0.616663
+Beta: 0.539743
+Sign: NEGATIVE
+Misclassified: 839
+
+WeakClassifier 6
+Error: 0.3542
+Dimension: 14906
+Threshold: -95
+Alpha: 0.600628
+Beta: 0.548467
+Sign: POSITIVE
+Misclassified: 1543
+
+WeakClassifier 7
+Error: 0.353758
+Dimension: 37442
+Threshold: 41
+Alpha: 0.602559
+Beta: 0.547409
+Sign: NEGATIVE
+Misclassified: 809
+
+---------------
+
+Stage 3
+
+FPR: 0.014
+DR: 0.889667
+Threshold: 2.71539
+Classifiers:
+
+WeakClassifier 0
+Error: 0.0268695
+Dimension: 27987
+Threshold: -305
+Alpha: 3.58952
+Beta: 0.0276114
+Sign: NEGATIVE
+Misclassified: 166
+
+WeakClassifier 1
+Error: 0.324038
+Dimension: 100592
+Threshold: -57
+Alpha: 0.735278
+Beta: 0.479372
+Sign: POSITIVE
+Misclassified: 908
+
+WeakClassifier 2
+Error: 0.331088
+Dimension: 34360
+Threshold: 60
+Alpha: 0.703267
+Beta: 0.494966
+Sign: NEGATIVE
+Misclassified: 822
+
+WeakClassifier 3
+Error: 0.335321
+Dimension: 22678
+Threshold: -50
+Alpha: 0.684216
+Beta: 0.504486
+Sign: POSITIVE
+Misclassified: 968
+
+WeakClassifier 4
+Error: 0.338716
+Dimension: 92355
+Threshold: -21
+Alpha: 0.669021
+Beta: 0.51221
+Sign: POSITIVE
+Misclassified: 1323
+
+WeakClassifier 5
+Error: 0.35675
+Dimension: 49084
+Threshold: -1
+Alpha: 0.5895
+Beta: 0.554604
+Sign: NEGATIVE
+Misclassified: 856
+
+WeakClassifier 6
+Error: 0.351492
+Dimension: 93752
+Threshold: -16
+Alpha: 0.612489
+Beta: 0.542
+Sign: POSITIVE
+Misclassified: 1852
+
+WeakClassifier 7
+Error: 0.356754
+Dimension: 28450
+Threshold: 180
+Alpha: 0.589479
+Beta: 0.554616
+Sign: POSITIVE
+Misclassified: 525
+
+WeakClassifier 8
+Error: 0.349463
+Dimension: 57195
+Threshold: -17
+Alpha: 0.621402
+Beta: 0.537191
+Sign: POSITIVE
+Misclassified: 1441
+
+WeakClassifier 9
+Error: 0.346015
+Dimension: 40243
+Threshold: 145
+Alpha: 0.636602
+Beta: 0.529087
+Sign: NEGATIVE
+Misclassified: 710
+
+---------------
+
+Stage 4
+
+FPR: 0.006
+DR: 0.851
+Threshold: 4.17589
+Classifiers:
+
+WeakClassifier 0
+Error: 0.0126561
+Dimension: 71634
+Threshold: 1425
+Alpha: 4.35688
+Beta: 0.0128184
+Sign: POSITIVE
+Misclassified: 77
+
+WeakClassifier 1
+Error: 0.334384
+Dimension: 64830
+Threshold: -10
+Alpha: 0.688424
+Beta: 0.502367
+Sign: POSITIVE
+Misclassified: 1173
+
+WeakClassifier 2
+Error: 0.34236
+Dimension: 41389
+Threshold: -480
+Alpha: 0.652793
+Beta: 0.52059
+Sign: POSITIVE
+Misclassified: 675
+
+WeakClassifier 3
+Error: 0.347152
+Dimension: 93744
+Threshold: -13
+Alpha: 0.631583
+Beta: 0.531749
+Sign: POSITIVE
+Misclassified: 1398
+
+WeakClassifier 4
+Error: 0.346243
+Dimension: 51636
+Threshold: 23
+Alpha: 0.635596
+Beta: 0.52962
+Sign: NEGATIVE
+Misclassified: 333
+
+WeakClassifier 5
+Error: 0.334636
+Dimension: 20828
+Threshold: -212
+Alpha: 0.687292
+Beta: 0.502936
+Sign: POSITIVE
+Misclassified: 1891
+
+WeakClassifier 6
+Error: 0.331986
+Dimension: 36288
+Threshold: 713
+Alpha: 0.699216
+Beta: 0.496975
+Sign: POSITIVE
+Misclassified: 514
+
+---------------
+
+Stage 5
+
+FPR: 0.00166667
+DR: 0.822667
+Threshold: 4.45813
+Classifiers:
+
+WeakClassifier 0
+Error: 0.0054672
+Dimension: 7630
+Threshold: -1207
+Alpha: 5.20351
+Beta: 0.00549725
+Sign: NEGATIVE
+Misclassified: 33
+
+WeakClassifier 1
+Error: 0.270024
+Dimension: 30150
+Threshold: 26
+Alpha: 0.9945
+Beta: 0.369908
+Sign: NEGATIVE
+Misclassified: 543
+
+WeakClassifier 2
+Error: 0.262866
+Dimension: 93325
+Threshold: -8
+Alpha: 1.03112
+Beta: 0.356606
+Sign: NEGATIVE
+Misclassified: 942
+
+WeakClassifier 3
+Error: 0.275579
+Dimension: 100652
+Threshold: -51
+Alpha: 0.966501
+Beta: 0.380412
+Sign: POSITIVE
+Misclassified: 1108
+
+WeakClassifier 4
+Error: 0.275536
+Dimension: 39071
+Threshold: 117
+Alpha: 0.966715
+Beta: 0.38033
+Sign: NEGATIVE
+Misclassified: 1095
+
+WeakClassifier 5
+Error: 0.278306
+Dimension: 28751
+Threshold: -428
+Alpha: 0.952878
+Beta: 0.385629
+Sign: NEGATIVE
+Misclassified: 611
+
+WeakClassifier 6
+Error: 0.309804
+Dimension: 100766
+Threshold: 42
+Alpha: 0.801035
+Beta: 0.448864
+Sign: POSITIVE
+Misclassified: 981
+
+---------------
+
+Stage 6
+
+FPR: 0.000666667
+DR: 0.817667
+Threshold: 4.97318
+Classifiers:
+
+WeakClassifier 0
+Error: 0.00133111
+Dimension: 103878
+Threshold: -262
+Alpha: 6.62041
+Beta: 0.00133289
+Sign: NEGATIVE
+Misclassified: 8
+
+WeakClassifier 1
+Error: 0.152616
+Dimension: 10865
+Threshold: -423
+Alpha: 1.71423
+Beta: 0.180102
+Sign: POSITIVE
+Misclassified: 917
+
+WeakClassifier 2
+Error: 0.166349
+Dimension: 64238
+Threshold: 105
+Alpha: 1.61173
+Beta: 0.199543
+Sign: POSITIVE
+Misclassified: 101
+
+---------------
+
+Stage 7
+
+FPR: 0
+DR: 0.816
+Threshold: 5.99625
+Classifiers:
+
+WeakClassifier 0
+Error: 0.000499667
+Dimension: 1128
+Threshold: -2052
+Alpha: 7.60107
+Beta: 0.000499917
+Sign: NEGATIVE
+Misclassified: 3
+
+WeakClassifier 1
+Error: 0.0240793
+Dimension: 53447
+Threshold: 449
+Alpha: 3.70203
+Beta: 0.0246734
+Sign: POSITIVE
+Misclassified: 145
+
+WeakClassifier 2
+Error: 0.063602
+Dimension: 7909
+Threshold: 709
+Alpha: 2.6894
+Beta: 0.067922
+Sign: NEGATIVE
+Misclassified: 449
+
+---------------
+

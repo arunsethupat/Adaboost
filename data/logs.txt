@@ -1,0 +1,2401 @@
+MacBook-Pro-di-Lorenzo:Debug lorenzocioni$ ./AdaBoost
+FaceDetector
+************
+  -Scales: 12
+  -Window size: 24
+Training ViolaJones face detector
+
+Extracting image features
+Training size: 5000
+  -Positive samples: 2000
+  -Negative samples: 3000
+  -Validation set size: 2460
+Evaluated: 7459/7460 images
+Extracted features in 209.743905 s
+
+
+*** Stage n. 1 ***
+
+  -Training size: 4999
+  -Target FPR: 0.500000
+  -Target DR: 0.950000
+
+Training AdaBoost with 1 iterations
+Iteration: 1
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 1.913262, dimension: 39682, error: 0.128615, misclassified: 703, threshold: -300.000000, sign: positive
+Time: 418.763240 s
+DR: 0.931500 (TP: 1863 FN: 137)
+Decrease threshold to -0.043369
+DR: 0.931500 (TP: 1863 FN: 137)
+Decrease threshold to -1.043369
+DR: 0.931500 (TP: 1863 FN: 137)
+Decrease threshold to -2.043369
+DR: 1.000000 (TP: 2000 FN: 0)
+Evaluate FPR on validation set:
+FPR: 1.000000 (FP: 2460 TN: 0)
+
+Training AdaBoost with 2 iterations
+Iteration: 2
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 1.147220, dimension: 22701, error: 0.240997, misclassified: 1167, threshold: -59.000000, sign: positive
+Time: 428.657643 s
+DR: 0.641000 (TP: 1282 FN: 718)
+Decrease threshold to 0.530241
+DR: 0.931500 (TP: 1863 FN: 137)
+Decrease threshold to -0.469759
+DR: 0.931500 (TP: 1863 FN: 137)
+Decrease threshold to -1.469759
+DR: 0.974500 (TP: 1949 FN: 51)
+Evaluate FPR on validation set:
+FPR: 0.246748 (FP: 607 TN: 1853)
+
+
+Generating negative set for layer: max 2000
+Added 2001 (6352 tested) images to the negative set
+Stage n. 1, FPR: 0.246748, DR: 0.974500
+
+*** Stage n. 2 ***
+
+  -Training size: 4001
+  -Target FPR: 0.123374
+  -Target DR: 0.925775
+
+Training AdaBoost with 1 iterations
+Iteration: 1
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 1.421451, dimension: 92285, error: 0.194434, misclassified: 778, threshold: -21.000000, sign: positive
+Time: 331.626502 s
+DR: 0.855000 (TP: 1710 FN: 290)
+Decrease threshold to -0.289274
+DR: 0.855000 (TP: 1710 FN: 290)
+Decrease threshold to -1.289274
+DR: 0.855000 (TP: 1710 FN: 290)
+Decrease threshold to -2.289274
+DR: 0.974500 (TP: 1949 FN: 51)
+Evaluate FPR on validation set:
+FPR: 0.246748 (FP: 607 TN: 1853)
+
+Training AdaBoost with 2 iterations
+Iteration: 2
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 1.137529, dimension: 31846, error: 0.242774, misclassified: 949, threshold: 123.000000, sign: negative
+Time: 330.635810 s
+DR: 0.674000 (TP: 1348 FN: 652)
+Decrease threshold to 0.279490
+DR: 0.855000 (TP: 1710 FN: 290)
+Decrease threshold to -0.720510
+DR: 0.953500 (TP: 1907 FN: 93)
+Evaluate FPR on validation set:
+FPR: 0.136992 (FP: 337 TN: 2123)
+
+Training AdaBoost with 3 iterations
+Iteration: 3
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 1.146862, dimension: 31399, error: 0.241063, misclassified: 946, threshold: 3.000000, sign: positive
+Time: 355.768993 s
+DR: 0.560500 (TP: 1121 FN: 879)
+Decrease threshold to 0.852921
+DR: 0.920000 (TP: 1840 FN: 160)
+Decrease threshold to -0.147079
+DR: 0.920000 (TP: 1840 FN: 160)
+Decrease threshold to -1.147079
+DR: 0.941000 (TP: 1882 FN: 118)
+Evaluate FPR on validation set:
+FPR: 0.123984 (FP: 305 TN: 2155)
+
+Training AdaBoost with 4 iterations
+Iteration: 4
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 1.025330, dimension: 22992, error: 0.263990, misclassified: 1069, threshold: -76.000000, sign: positive
+Time: 346.861869 s
+DR: 0.722500 (TP: 1445 FN: 555)
+Decrease threshold to 1.365586
+DR: 0.770500 (TP: 1541 FN: 459)
+Decrease threshold to 0.365586
+DR: 0.882000 (TP: 1764 FN: 236)
+Decrease threshold to -0.634414
+DR: 0.945500 (TP: 1891 FN: 109)
+Evaluate FPR on validation set:
+FPR: 0.110976 (FP: 273 TN: 2187)
+
+
+Generating negative set for layer: max 2000
+Added 2000 (20250 tested) images to the negative set
+Stage n. 2, FPR: 0.110976, DR: 0.945500
+
+*** Stage n. 3 ***
+
+  -Training size: 4000
+  -Target FPR: 0.055488
+  -Target DR: 0.898225
+
+Training AdaBoost with 1 iterations
+Iteration: 1
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.997161, dimension: 102260, error: 0.269500, misclassified: 1078, threshold: 217.000000, sign: negative
+Time: 338.017102 s
+DR: 0.751000 (TP: 1502 FN: 498)
+Decrease threshold to -0.501420
+DR: 0.751000 (TP: 1502 FN: 498)
+Decrease threshold to -1.501420
+DR: 0.945500 (TP: 1891 FN: 109)
+Evaluate FPR on validation set:
+FPR: 0.110976 (FP: 273 TN: 2187)
+
+Training AdaBoost with 2 iterations
+Iteration: 2
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.700111, dimension: 59833, error: 0.331788, misclassified: 1265, threshold: -47.000000, sign: positive
+Time: 337.168882 s
+DR: 0.504500 (TP: 1009 FN: 991)
+Decrease threshold to -0.151364
+DR: 0.751000 (TP: 1502 FN: 498)
+Decrease threshold to -1.151364
+DR: 0.866500 (TP: 1733 FN: 267)
+Decrease threshold to -2.151364
+DR: 0.945500 (TP: 1891 FN: 109)
+Evaluate FPR on validation set:
+FPR: 0.110976 (FP: 273 TN: 2187)
+
+Training AdaBoost with 3 iterations
+Iteration: 3
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.737075, dimension: 37219, error: 0.323644, misclassified: 1304, threshold: 105.000000, sign: negative
+Time: 335.258651 s
+DR: 0.356500 (TP: 713 FN: 1287)
+Decrease threshold to 0.217174
+DR: 0.776000 (TP: 1552 FN: 448)
+Decrease threshold to -0.782826
+DR: 0.827000 (TP: 1654 FN: 346)
+Decrease threshold to -1.782826
+DR: 0.923000 (TP: 1846 FN: 154)
+Evaluate FPR on validation set:
+FPR: 0.073171 (FP: 180 TN: 2280)
+
+Training AdaBoost with 4 iterations
+Iteration: 4
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.668121, dimension: 48094, error: 0.338918, misclassified: 1256, threshold: 32.000000, sign: negative
+Time: 325.464506 s
+DR: 0.644000 (TP: 1288 FN: 712)
+Decrease threshold to 0.551234
+DR: 0.699500 (TP: 1399 FN: 601)
+Decrease threshold to -0.448766
+DR: 0.892000 (TP: 1784 FN: 216)
+Decrease threshold to -1.448766
+DR: 0.899500 (TP: 1799 FN: 201)
+Evaluate FPR on validation set:
+FPR: 0.052033 (FP: 128 TN: 2332)
+
+
+Generating negative set for layer: max 2000
+Added 2000 (40664 tested) images to the negative set
+Stage n. 3, FPR: 0.052033, DR: 0.899500
+
+*** Stage n. 4 ***
+
+  -Training size: 4000
+  -Target FPR: 0.026016
+  -Target DR: 0.854525
+
+Training AdaBoost with 1 iterations
+Iteration: 1
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.695773, dimension: 37224, error: 0.332750, misclassified: 1331, threshold: -97.000000, sign: positive
+Time: 347.886693 s
+DR: 0.721500 (TP: 1443 FN: 557)
+Decrease threshold to -0.652113
+DR: 0.721500 (TP: 1443 FN: 557)
+Decrease threshold to -1.652113
+DR: 0.899500 (TP: 1799 FN: 201)
+Evaluate FPR on validation set:
+FPR: 0.052033 (FP: 128 TN: 2332)
+
+Training AdaBoost with 2 iterations
+Iteration: 2
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.712947, dimension: 14329, error: 0.328948, misclassified: 1388, threshold: -40.000000, sign: positive
+Time: 340.170995 s
+DR: 0.485000 (TP: 970 FN: 1030)
+Decrease threshold to -0.295640
+DR: 0.850000 (TP: 1700 FN: 300)
+Decrease threshold to -1.295640
+DR: 0.850000 (TP: 1700 FN: 300)
+Decrease threshold to -2.295640
+DR: 0.899500 (TP: 1799 FN: 201)
+Evaluate FPR on validation set:
+FPR: 0.052033 (FP: 128 TN: 2332)
+
+Training AdaBoost with 3 iterations
+Iteration: 3
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.688774, dimension: 100783, error: 0.334306, misclassified: 1336, threshold: 53.000000, sign: negative
+Time: 336.014798 s
+DR: 0.334000 (TP: 668 FN: 1332)
+Decrease threshold to 0.048747
+DR: 0.708000 (TP: 1416 FN: 584)
+Decrease threshold to -0.951253
+DR: 0.882000 (TP: 1764 FN: 236)
+Evaluate FPR on validation set:
+FPR: 0.038618 (FP: 95 TN: 2365)
+
+Training AdaBoost with 4 iterations
+Iteration: 4
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.567678, dimension: 82260, error: 0.361773, misclassified: 1443, threshold: 651.000000, sign: positive
+Time: 347.493067 s
+DR: 0.334000 (TP: 668 FN: 1332)
+Decrease threshold to 0.332586
+DR: 0.675000 (TP: 1350 FN: 650)
+Decrease threshold to -0.667414
+DR: 0.872500 (TP: 1745 FN: 255)
+Evaluate FPR on validation set:
+FPR: 0.033740 (FP: 83 TN: 2377)
+
+Training AdaBoost with 5 iterations
+Iteration: 5
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.589022, dimension: 93754, error: 0.356859, misclassified: 1480, threshold: 14.000000, sign: negative
+Time: 330.938174 s
+DR: 0.518500 (TP: 1037 FN: 963)
+Decrease threshold to 0.627097
+DR: 0.696500 (TP: 1393 FN: 607)
+Decrease threshold to -0.372903
+DR: 0.795000 (TP: 1590 FN: 410)
+Decrease threshold to -1.372903
+DR: 0.889500 (TP: 1779 FN: 221)
+Evaluate FPR on validation set:
+FPR: 0.038211 (FP: 94 TN: 2366)
+
+Training AdaBoost with 6 iterations
+Iteration: 6
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.565374, dimension: 14596, error: 0.362305, misclassified: 1505, threshold: 40.000000, sign: negative
+Time: 320.172737 s
+DR: 0.351000 (TP: 702 FN: 1298)
+Decrease threshold to 0.909784
+DR: 0.664000 (TP: 1328 FN: 672)
+Decrease threshold to -0.090216
+DR: 0.771500 (TP: 1543 FN: 457)
+Decrease threshold to -1.090216
+DR: 0.844000 (TP: 1688 FN: 312)
+Decrease threshold to -2.090216
+DR: 0.895000 (TP: 1790 FN: 210)
+Evaluate FPR on validation set:
+FPR: 0.041057 (FP: 101 TN: 2359)
+
+Training AdaBoost with 7 iterations
+Iteration: 7
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.520095, dimension: 53787, error: 0.372830, misclassified: 1514, threshold: -19.000000, sign: positive
+Time: 354.366198 s
+DR: 0.283000 (TP: 566 FN: 1434)
+Decrease threshold to 1.169831
+DR: 0.599000 (TP: 1198 FN: 802)
+Decrease threshold to 0.169831
+DR: 0.798000 (TP: 1596 FN: 404)
+Decrease threshold to -0.830169
+DR: 0.877000 (TP: 1754 FN: 246)
+Evaluate FPR on validation set:
+FPR: 0.026829 (FP: 66 TN: 2394)
+
+Training AdaBoost with 8 iterations
+Iteration: 8
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.529617, dimension: 15426, error: 0.370606, misclassified: 1417, threshold: -122.000000, sign: positive
+Time: 324.440876 s
+DR: 0.319000 (TP: 638 FN: 1362)
+Decrease threshold to 1.434640
+DR: 0.513000 (TP: 1026 FN: 974)
+Decrease threshold to 0.434640
+DR: 0.721500 (TP: 1443 FN: 557)
+Decrease threshold to -0.565360
+DR: 0.840500 (TP: 1681 FN: 319)
+Decrease threshold to -1.565360
+DR: 0.892500 (TP: 1785 FN: 215)
+Evaluate FPR on validation set:
+FPR: 0.034146 (FP: 84 TN: 2376)
+
+Training AdaBoost with 9 iterations
+Iteration: 9
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.523987, dimension: 14332, error: 0.371920, misclassified: 1763, threshold: 49.000000, sign: negative
+Time: 315.957462 s
+DR: 0.288000 (TP: 576 FN: 1424)
+Decrease threshold to 1.696633
+DR: 0.541500 (TP: 1083 FN: 917)
+Decrease threshold to 0.696633
+DR: 0.668500 (TP: 1337 FN: 663)
+Decrease threshold to -0.303367
+DR: 0.797000 (TP: 1594 FN: 406)
+Decrease threshold to -1.303367
+DR: 0.873500 (TP: 1747 FN: 253)
+Evaluate FPR on validation set:
+FPR: 0.023171 (FP: 57 TN: 2403)
+
+
+Generating negative set for layer: max 2000
+Added 1058 (48291 tested) images to the negative set
+Stage n. 4, FPR: 0.023171, DR: 0.873500
+
+*** Stage n. 5 ***
+
+  -Training size: 3058
+  -Target FPR: 0.011585
+  -Target DR: 0.829825
+
+Training AdaBoost with 1 iterations
+Iteration: 1
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.603504, dimension: 100592, error: 0.353543, misclassified: 1042, threshold: -74.000000, sign: positive
+Time: 235.474790 s
+DR: 0.626500 (TP: 1253 FN: 747)
+Decrease threshold to -0.698248
+DR: 0.873500 (TP: 1747 FN: 253)
+Evaluate FPR on validation set:
+FPR: 0.023171 (FP: 57 TN: 2403)
+
+Training AdaBoost with 2 iterations
+Iteration: 2
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.590238, dimension: 24918, error: 0.356580, misclassified: 1195, threshold: -139.000000, sign: positive
+Time: 246.423281 s
+DR: 0.363000 (TP: 726 FN: 1274)
+Decrease threshold to -0.403129
+DR: 0.785000 (TP: 1570 FN: 430)
+Decrease threshold to -1.403129
+DR: 0.873500 (TP: 1747 FN: 253)
+Evaluate FPR on validation set:
+FPR: 0.023171 (FP: 57 TN: 2403)
+
+Training AdaBoost with 3 iterations
+Iteration: 3
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.639775, dimension: 32716, error: 0.345297, misclassified: 902, threshold: 62.000000, sign: negative
+Time: 265.087011 s
+DR: 0.329000 (TP: 658 FN: 1342)
+Decrease threshold to -0.083242
+DR: 0.740500 (TP: 1481 FN: 519)
+Decrease threshold to -1.083242
+DR: 0.867500 (TP: 1735 FN: 265)
+Evaluate FPR on validation set:
+FPR: 0.021138 (FP: 52 TN: 2408)
+
+Training AdaBoost with 4 iterations
+Iteration: 4
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.496631, dimension: 40744, error: 0.378333, misclassified: 1022, threshold: -75.000000, sign: positive
+Time: 269.324516 s
+DR: 0.329000 (TP: 658 FN: 1342)
+Decrease threshold to 0.165073
+DR: 0.631500 (TP: 1263 FN: 737)
+Decrease threshold to -0.834927
+DR: 0.831500 (TP: 1663 FN: 337)
+Evaluate FPR on validation set:
+FPR: 0.014634 (FP: 36 TN: 2424)
+
+Training AdaBoost with 5 iterations
+Iteration: 5
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.512554, dimension: 104701, error: 0.374595, misclassified: 1169, threshold: -185.000000, sign: positive
+Time: 265.971168 s
+DR: 0.488500 (TP: 977 FN: 1023)
+Decrease threshold to 0.421350
+DR: 0.746500 (TP: 1493 FN: 507)
+Decrease threshold to -0.578650
+DR: 0.836500 (TP: 1673 FN: 327)
+Evaluate FPR on validation set:
+FPR: 0.013821 (FP: 34 TN: 2426)
+
+Training AdaBoost with 6 iterations
+Iteration: 6
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.468121, dimension: 92331, error: 0.385061, misclassified: 1062, threshold: -176.000000, sign: negative
+Time: 219.422698 s
+DR: 0.412000 (TP: 824 FN: 1176)
+Decrease threshold to 0.655411
+DR: 0.713000 (TP: 1426 FN: 574)
+Decrease threshold to -0.344589
+DR: 0.837500 (TP: 1675 FN: 325)
+Evaluate FPR on validation set:
+FPR: 0.013008 (FP: 32 TN: 2428)
+
+Training AdaBoost with 7 iterations
+Iteration: 7
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.575974, dimension: 24789, error: 0.359859, misclassified: 1884, threshold: 740.000000, sign: negative
+Time: 240.931905 s
+DR: 0.144500 (TP: 289 FN: 1711)
+Decrease threshold to 0.943398
+DR: 0.441000 (TP: 882 FN: 1118)
+Decrease threshold to -0.056602
+DR: 0.728500 (TP: 1457 FN: 543)
+Decrease threshold to -1.056602
+DR: 0.849000 (TP: 1698 FN: 302)
+Evaluate FPR on validation set:
+FPR: 0.013821 (FP: 34 TN: 2426)
+
+Training AdaBoost with 8 iterations
+Iteration: 8
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.493548, dimension: 37234, error: 0.379058, misclassified: 1095, threshold: 14.000000, sign: negative
+Time: 254.267102 s
+DR: 0.253000 (TP: 506 FN: 1494)
+Decrease threshold to 1.190172
+DR: 0.449000 (TP: 898 FN: 1102)
+Decrease threshold to 0.190172
+DR: 0.666500 (TP: 1333 FN: 667)
+Decrease threshold to -0.809828
+DR: 0.826500 (TP: 1653 FN: 347)
+Decrease threshold to -1.809828
+DR: 0.865000 (TP: 1730 FN: 270)
+Evaluate FPR on validation set:
+FPR: 0.017480 (FP: 43 TN: 2417)
+
+Training AdaBoost with 9 iterations
+Iteration: 9
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.463231, dimension: 53560, error: 0.386220, misclassified: 894, threshold: 1131.000000, sign: positive
+Time: 251.115695 s
+DR: 0.319500 (TP: 639 FN: 1361)
+Decrease threshold to 1.421788
+DR: 0.600000 (TP: 1200 FN: 800)
+Decrease threshold to 0.421788
+DR: 0.756500 (TP: 1513 FN: 487)
+Decrease threshold to -0.578212
+DR: 0.837500 (TP: 1675 FN: 325)
+Evaluate FPR on validation set:
+FPR: 0.010569 (FP: 26 TN: 2434)
+
+
+Generating negative set for layer: max 2000
+Added 1472 (95232 tested) images to the negative set
+Stage n. 5, FPR: 0.010569, DR: 0.837500
+
+*** Stage n. 6 ***
+
+  -Training size: 3472
+  -Target FPR: 0.005285
+  -Target DR: 0.795625
+
+Training AdaBoost with 1 iterations
+Iteration: 1
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.563201, dimension: 16781, error: 0.362807, misclassified: 1283, threshold: -231.000000, sign: positive
+Time: 294.916326 s
+DR: 0.531500 (TP: 1063 FN: 937)
+Decrease threshold to -0.718399
+DR: 0.837500 (TP: 1675 FN: 325)
+Evaluate FPR on validation set:
+FPR: 0.010569 (FP: 26 TN: 2434)
+
+Training AdaBoost with 2 iterations
+Iteration: 2
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.579471, dimension: 49086, error: 0.359054, misclassified: 1139, threshold: -1.000000, sign: negative
+Time: 279.644454 s
+DR: 0.479000 (TP: 958 FN: 1042)
+Decrease threshold to -0.428664
+DR: 0.800000 (TP: 1600 FN: 400)
+Evaluate FPR on validation set:
+FPR: 0.007317 (FP: 18 TN: 2442)
+
+Training AdaBoost with 3 iterations
+Iteration: 3
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.455517, dimension: 97593, error: 0.388050, misclassified: 1362, threshold: 68.000000, sign: negative
+Time: 332.549502 s
+DR: 0.321000 (TP: 642 FN: 1358)
+Decrease threshold to -0.200905
+DR: 0.643000 (TP: 1286 FN: 714)
+Decrease threshold to -1.200905
+DR: 0.819500 (TP: 1639 FN: 361)
+Evaluate FPR on validation set:
+FPR: 0.009350 (FP: 23 TN: 2437)
+
+Training AdaBoost with 4 iterations
+Iteration: 4
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.464471, dimension: 48256, error: 0.385926, misclassified: 1325, threshold: 394.000000, sign: negative
+Time: 353.763526 s
+DR: 0.435500 (TP: 871 FN: 1129)
+Decrease threshold to 0.031331
+DR: 0.601000 (TP: 1202 FN: 798)
+Decrease threshold to -0.968669
+DR: 0.814500 (TP: 1629 FN: 371)
+Evaluate FPR on validation set:
+FPR: 0.008130 (FP: 20 TN: 2440)
+
+Training AdaBoost with 5 iterations
+Iteration: 5
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.416774, dimension: 29860, error: 0.397289, misclassified: 1217, threshold: 258.000000, sign: positive
+Time: 341.052697 s
+DR: 0.515000 (TP: 1030 FN: 970)
+Decrease threshold to 0.239718
+DR: 0.738000 (TP: 1476 FN: 524)
+Decrease threshold to -0.760282
+DR: 0.832000 (TP: 1664 FN: 336)
+Evaluate FPR on validation set:
+FPR: 0.007724 (FP: 19 TN: 2441)
+
+Training AdaBoost with 6 iterations
+Iteration: 6
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.509469, dimension: 13194, error: 0.375318, misclassified: 1910, threshold: 453.000000, sign: negative
+Time: 343.560639 s
+DR: 0.205000 (TP: 410 FN: 1590)
+Decrease threshold to 0.494453
+DR: 0.548000 (TP: 1096 FN: 904)
+Decrease threshold to -0.505547
+DR: 0.768500 (TP: 1537 FN: 463)
+Decrease threshold to -1.505547
+DR: 0.833000 (TP: 1666 FN: 334)
+Evaluate FPR on validation set:
+FPR: 0.008130 (FP: 20 TN: 2440)
+
+Training AdaBoost with 7 iterations
+Iteration: 7
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.478462, dimension: 51417, error: 0.382615, misclassified: 1258, threshold: -14.000000, sign: negative
+Time: 282.324788 s
+DR: 0.178000 (TP: 356 FN: 1644)
+Decrease threshold to 0.733684
+DR: 0.500500 (TP: 1001 FN: 999)
+Decrease threshold to -0.266316
+DR: 0.737500 (TP: 1475 FN: 525)
+Decrease threshold to -1.266316
+DR: 0.826000 (TP: 1652 FN: 348)
+Evaluate FPR on validation set:
+FPR: 0.006911 (FP: 17 TN: 2443)
+
+Training AdaBoost with 8 iterations
+Iteration: 8
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.426914, dimension: 49146, error: 0.394864, misclassified: 1511, threshold: 55.000000, sign: negative
+Time: 317.803898 s
+DR: 0.221000 (TP: 442 FN: 1558)
+Decrease threshold to 0.947140
+DR: 0.503000 (TP: 1006 FN: 994)
+Decrease threshold to -0.052860
+DR: 0.733500 (TP: 1467 FN: 533)
+Decrease threshold to -1.052860
+DR: 0.815500 (TP: 1631 FN: 369)
+Evaluate FPR on validation set:
+FPR: 0.006504 (FP: 16 TN: 2444)
+
+Training AdaBoost with 9 iterations
+Iteration: 9
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.407049, dimension: 43854, error: 0.399620, misclassified: 1210, threshold: 1034.000000, sign: positive
+Time: 324.848429 s
+DR: 0.292500 (TP: 585 FN: 1415)
+Decrease threshold to 1.150665
+DR: 0.559000 (TP: 1118 FN: 882)
+Decrease threshold to 0.150665
+DR: 0.736500 (TP: 1473 FN: 527)
+Decrease threshold to -0.849335
+DR: 0.820500 (TP: 1641 FN: 359)
+Evaluate FPR on validation set:
+FPR: 0.004878 (FP: 12 TN: 2448)
+
+
+Generating negative set for layer: max 2000
+Added 917 (95110 tested) images to the negative set
+Stage n. 6, FPR: 0.004878, DR: 0.820500
+
+*** Stage n. 7 ***
+
+  -Training size: 2917
+  -Target FPR: 0.002439
+  -Target DR: 0.779475
+
+Training AdaBoost with 1 iterations
+Iteration: 1
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.594935, dimension: 44103, error: 0.355503, misclassified: 900, threshold: 25.000000, sign: negative
+Time: 261.399916 s
+DR: 0.652500 (TP: 1305 FN: 695)
+Decrease threshold to -0.702532
+DR: 0.820500 (TP: 1641 FN: 359)
+Evaluate FPR on validation set:
+FPR: 0.004878 (FP: 12 TN: 2448)
+
+Training AdaBoost with 2 iterations
+Iteration: 2
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.442316, dimension: 64041, error: 0.391189, misclassified: 1290, threshold: -26.000000, sign: positive
+Time: 254.565370 s
+DR: 0.341500 (TP: 683 FN: 1317)
+Decrease threshold to -0.481374
+DR: 0.736000 (TP: 1472 FN: 528)
+Decrease threshold to -1.481374
+DR: 0.820500 (TP: 1641 FN: 359)
+Evaluate FPR on validation set:
+FPR: 0.004878 (FP: 12 TN: 2448)
+
+Training AdaBoost with 3 iterations
+Iteration: 3
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.473602, dimension: 69916, error: 0.383764, misclassified: 923, threshold: 630.000000, sign: negative
+Time: 221.356558 s
+DR: 0.276500 (TP: 553 FN: 1447)
+Decrease threshold to -0.244573
+DR: 0.667000 (TP: 1334 FN: 666)
+Decrease threshold to -1.244573
+DR: 0.808000 (TP: 1616 FN: 384)
+Evaluate FPR on validation set:
+FPR: 0.004472 (FP: 11 TN: 2449)
+
+Training AdaBoost with 4 iterations
+Iteration: 4
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.425664, dimension: 104068, error: 0.395162, misclassified: 1108, threshold: -147.000000, sign: positive
+Time: 225.524278 s
+DR: 0.501000 (TP: 1002 FN: 998)
+Decrease threshold to -0.031741
+DR: 0.684000 (TP: 1368 FN: 632)
+Decrease threshold to -1.031741
+DR: 0.805500 (TP: 1611 FN: 389)
+Evaluate FPR on validation set:
+FPR: 0.004472 (FP: 11 TN: 2449)
+
+Training AdaBoost with 5 iterations
+Iteration: 5
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.402777, dimension: 102157, error: 0.400645, misclassified: 1358, threshold: 128.000000, sign: negative
+Time: 208.760756 s
+DR: 0.345500 (TP: 691 FN: 1309)
+Decrease threshold to 0.169647
+DR: 0.667500 (TP: 1335 FN: 665)
+Decrease threshold to -0.830353
+DR: 0.795000 (TP: 1590 FN: 410)
+Evaluate FPR on validation set:
+FPR: 0.004878 (FP: 12 TN: 2448)
+
+Training AdaBoost with 6 iterations
+Iteration: 6
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.388646, dimension: 22804, error: 0.404043, misclassified: 1074, threshold: -38.000000, sign: positive
+Time: 216.864529 s
+DR: 0.294000 (TP: 588 FN: 1412)
+Decrease threshold to 0.363970
+DR: 0.581000 (TP: 1162 FN: 838)
+Decrease threshold to -0.636030
+DR: 0.757500 (TP: 1515 FN: 485)
+Decrease threshold to -1.636030
+DR: 0.812000 (TP: 1624 FN: 376)
+Evaluate FPR on validation set:
+FPR: 0.004878 (FP: 12 TN: 2448)
+
+Training AdaBoost with 7 iterations
+Iteration: 7
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.395057, dimension: 63826, error: 0.402501, misclassified: 1152, threshold: -4.000000, sign: positive
+Time: 211.843472 s
+DR: 0.210500 (TP: 421 FN: 1579)
+Decrease threshold to 0.561499
+DR: 0.603500 (TP: 1207 FN: 793)
+Decrease threshold to -0.438501
+DR: 0.737000 (TP: 1474 FN: 526)
+Decrease threshold to -1.438501
+DR: 0.808000 (TP: 1616 FN: 384)
+Evaluate FPR on validation set:
+FPR: 0.004472 (FP: 11 TN: 2449)
+
+Training AdaBoost with 8 iterations
+Iteration: 8
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.437741, dimension: 31564, error: 0.392279, misclassified: 1176, threshold: -22.000000, sign: positive
+Time: 230.033633 s
+DR: 0.334500 (TP: 669 FN: 1331)
+Decrease threshold to 0.780369
+DR: 0.572000 (TP: 1144 FN: 856)
+Decrease threshold to -0.219631
+DR: 0.761500 (TP: 1523 FN: 477)
+Decrease threshold to -1.219631
+DR: 0.807500 (TP: 1615 FN: 385)
+Evaluate FPR on validation set:
+FPR: 0.004878 (FP: 12 TN: 2448)
+
+Training AdaBoost with 9 iterations
+Iteration: 9
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.363559, dimension: 12428, error: 0.410098, misclassified: 1737, threshold: 116.000000, sign: negative
+Time: 209.123602 s
+DR: 0.177000 (TP: 354 FN: 1646)
+Decrease threshold to 0.962149
+DR: 0.423000 (TP: 846 FN: 1154)
+Decrease threshold to -0.037851
+DR: 0.663000 (TP: 1326 FN: 674)
+Decrease threshold to -1.037851
+DR: 0.783000 (TP: 1566 FN: 434)
+Evaluate FPR on validation set:
+FPR: 0.003659 (FP: 9 TN: 2451)
+
+Training AdaBoost with 10 iterations
+Iteration: 10
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.438927, dimension: 103856, error: 0.391997, misclassified: 827, threshold: 32.000000, sign: positive
+Time: 208.869277 s
+DR: 0.164000 (TP: 328 FN: 1672)
+Decrease threshold to 1.181613
+DR: 0.416500 (TP: 833 FN: 1167)
+Decrease threshold to 0.181613
+DR: 0.710000 (TP: 1420 FN: 580)
+Decrease threshold to -0.818387
+DR: 0.790500 (TP: 1581 FN: 419)
+Evaluate FPR on validation set:
+FPR: 0.004065 (FP: 10 TN: 2450)
+
+Training AdaBoost with 11 iterations
+Iteration: 11
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.401749, dimension: 10885, error: 0.400892, misclassified: 1829, threshold: 60.000000, sign: positive
+Time: 208.761419 s
+DR: 0.109500 (TP: 219 FN: 1781)
+Decrease threshold to 1.382487
+DR: 0.385500 (TP: 771 FN: 1229)
+Decrease threshold to 0.382487
+DR: 0.609000 (TP: 1218 FN: 782)
+Decrease threshold to -0.617513
+DR: 0.765000 (TP: 1530 FN: 470)
+Decrease threshold to -1.617513
+DR: 0.808000 (TP: 1616 FN: 384)
+Evaluate FPR on validation set:
+FPR: 0.004878 (FP: 12 TN: 2448)
+
+Training AdaBoost with 12 iterations
+Iteration: 12
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.478858, dimension: 49042, error: 0.382522, misclassified: 773, threshold: -45.000000, sign: negative
+Time: 209.238816 s
+DR: 0.170000 (TP: 340 FN: 1660)
+Decrease threshold to 1.621916
+DR: 0.406500 (TP: 813 FN: 1187)
+Decrease threshold to 0.621916
+DR: 0.638000 (TP: 1276 FN: 724)
+Decrease threshold to -0.378084
+DR: 0.762500 (TP: 1525 FN: 475)
+Decrease threshold to -1.378084
+DR: 0.809500 (TP: 1619 FN: 381)
+Evaluate FPR on validation set:
+FPR: 0.004065 (FP: 10 TN: 2450)
+
+Training AdaBoost with 13 iterations
+Iteration: 13
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.371006, dimension: 49170, error: 0.408298, misclassified: 1843, threshold: 164.000000, sign: negative
+Time: 208.641204 s
+DR: 0.057500 (TP: 115 FN: 1885)
+Decrease threshold to 1.807419
+DR: 0.204500 (TP: 409 FN: 1591)
+Decrease threshold to 0.807419
+DR: 0.509000 (TP: 1018 FN: 982)
+Decrease threshold to -0.192581
+DR: 0.725500 (TP: 1451 FN: 549)
+Decrease threshold to -1.192581
+DR: 0.796000 (TP: 1592 FN: 408)
+Evaluate FPR on validation set:
+FPR: 0.003659 (FP: 9 TN: 2451)
+
+Training AdaBoost with 14 iterations
+Iteration: 14
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.470976, dimension: 50171, error: 0.384385, misclassified: 822, threshold: 76.000000, sign: positive
+Time: 208.993276 s
+DR: 0.054500 (TP: 109 FN: 1891)
+Decrease threshold to 2.042907
+DR: 0.337500 (TP: 675 FN: 1325)
+Decrease threshold to 1.042907
+DR: 0.589500 (TP: 1179 FN: 821)
+Decrease threshold to 0.042907
+DR: 0.741000 (TP: 1482 FN: 518)
+Decrease threshold to -0.957093
+DR: 0.806500 (TP: 1613 FN: 387)
+Evaluate FPR on validation set:
+FPR: 0.003659 (FP: 9 TN: 2451)
+
+Training AdaBoost with 15 iterations
+Iteration: 15
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.358325, dimension: 6768, error: 0.411365, misclassified: 1895, threshold: 262.000000, sign: negative
+Time: 208.472533 s
+DR: 0.052000 (TP: 104 FN: 1896)
+Decrease threshold to 2.222070
+DR: 0.205000 (TP: 410 FN: 1590)
+Decrease threshold to 1.222070
+DR: 0.442500 (TP: 885 FN: 1115)
+Decrease threshold to 0.222070
+DR: 0.647500 (TP: 1295 FN: 705)
+Decrease threshold to -0.777930
+DR: 0.768500 (TP: 1537 FN: 463)
+Decrease threshold to -1.777930
+DR: 0.813500 (TP: 1627 FN: 373)
+Evaluate FPR on validation set:
+FPR: 0.004472 (FP: 11 TN: 2449)
+
+Training AdaBoost with 16 iterations
+Iteration: 16
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.414961, dimension: 29627, error: 0.397723, misclassified: 819, threshold: -691.000000, sign: negative
+Time: 208.822342 s
+DR: 0.054500 (TP: 109 FN: 1891)
+Decrease threshold to 2.429550
+DR: 0.202500 (TP: 405 FN: 1595)
+Decrease threshold to 1.429550
+DR: 0.425500 (TP: 851 FN: 1149)
+Decrease threshold to 0.429550
+DR: 0.690500 (TP: 1381 FN: 619)
+Decrease threshold to -0.570450
+DR: 0.784000 (TP: 1568 FN: 432)
+Evaluate FPR on validation set:
+FPR: 0.003252 (FP: 8 TN: 2452)
+
+Training AdaBoost with 17 iterations
+Iteration: 17
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.368183, dimension: 51286, error: 0.408980, misclassified: 1063, threshold: -53.000000, sign: positive
+Time: 208.622033 s
+DR: 0.040500 (TP: 81 FN: 1919)
+Decrease threshold to 2.613642
+DR: 0.199500 (TP: 399 FN: 1601)
+Decrease threshold to 1.613642
+DR: 0.495500 (TP: 991 FN: 1009)
+Decrease threshold to 0.613642
+DR: 0.690500 (TP: 1381 FN: 619)
+Decrease threshold to -0.386358
+DR: 0.784500 (TP: 1569 FN: 431)
+Evaluate FPR on validation set:
+FPR: 0.002846 (FP: 7 TN: 2453)
+
+Training AdaBoost with 18 iterations
+Iteration: 18
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.376322, dimension: 103838, error: 0.407014, misclassified: 1661, threshold: 107.000000, sign: negative
+Time: 208.706153 s
+DR: 0.036500 (TP: 73 FN: 1927)
+Decrease threshold to 2.801803
+DR: 0.192000 (TP: 384 FN: 1616)
+Decrease threshold to 1.801803
+DR: 0.393000 (TP: 786 FN: 1214)
+Decrease threshold to 0.801803
+DR: 0.610000 (TP: 1220 FN: 780)
+Decrease threshold to -0.198197
+DR: 0.743000 (TP: 1486 FN: 514)
+Decrease threshold to -1.198197
+DR: 0.801000 (TP: 1602 FN: 398)
+Evaluate FPR on validation set:
+FPR: 0.004065 (FP: 10 TN: 2450)
+
+Training AdaBoost with 19 iterations
+Iteration: 19
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.374745, dimension: 36791, error: 0.407395, misclassified: 964, threshold: 242.000000, sign: positive
+Time: 209.202231 s
+DR: 0.056000 (TP: 112 FN: 1888)
+Decrease threshold to 2.989175
+DR: 0.189500 (TP: 379 FN: 1621)
+Decrease threshold to 1.989175
+DR: 0.381000 (TP: 762 FN: 1238)
+Decrease threshold to 0.989175
+DR: 0.604000 (TP: 1208 FN: 792)
+Decrease threshold to -0.010825
+DR: 0.748000 (TP: 1496 FN: 504)
+Decrease threshold to -1.010825
+DR: 0.803000 (TP: 1606 FN: 394)
+Evaluate FPR on validation set:
+FPR: 0.004065 (FP: 10 TN: 2450)
+
+Training AdaBoost with 20 iterations
+Iteration: 20
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.337908, dimension: 56855, error: 0.416318, misclassified: 1372, threshold: -27.000000, sign: positive
+Time: 208.577307 s
+DR: 0.036500 (TP: 73 FN: 1927)
+Decrease threshold to 3.158129
+DR: 0.128000 (TP: 256 FN: 1744)
+Decrease threshold to 2.158129
+DR: 0.334500 (TP: 669 FN: 1331)
+Decrease threshold to 1.158129
+DR: 0.594000 (TP: 1188 FN: 812)
+Decrease threshold to 0.158129
+DR: 0.733000 (TP: 1466 FN: 534)
+Decrease threshold to -0.841871
+DR: 0.798000 (TP: 1596 FN: 404)
+Evaluate FPR on validation set:
+FPR: 0.003659 (FP: 9 TN: 2451)
+
+Training AdaBoost with 21 iterations
+Iteration: 21
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.364687, dimension: 82298, error: 0.409825, misclassified: 1063, threshold: 508.000000, sign: positive
+Time: 208.821124 s
+DR: 0.025500 (TP: 51 FN: 1949)
+Decrease threshold to 3.340473
+DR: 0.142500 (TP: 285 FN: 1715)
+Decrease threshold to 2.340473
+DR: 0.377000 (TP: 754 FN: 1246)
+Decrease threshold to 1.340473
+DR: 0.587000 (TP: 1174 FN: 826)
+Decrease threshold to 0.340473
+DR: 0.725000 (TP: 1450 FN: 550)
+Decrease threshold to -0.659527
+DR: 0.795500 (TP: 1591 FN: 409)
+Evaluate FPR on validation set:
+FPR: 0.003659 (FP: 9 TN: 2451)
+
+Training AdaBoost with 22 iterations
+Iteration: 22
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.381827, dimension: 10900, error: 0.405686, misclassified: 1880, threshold: -2.000000, sign: positive
+Time: 208.716607 s
+DR: 0.017000 (TP: 34 FN: 1966)
+Decrease threshold to 3.531386
+DR: 0.098500 (TP: 197 FN: 1803)
+Decrease threshold to 2.531386
+DR: 0.237000 (TP: 474 FN: 1526)
+Decrease threshold to 1.531386
+DR: 0.450000 (TP: 900 FN: 1100)
+Decrease threshold to 0.531386
+DR: 0.654000 (TP: 1308 FN: 692)
+Decrease threshold to -0.468614
+DR: 0.762500 (TP: 1525 FN: 475)
+Decrease threshold to -1.468614
+DR: 0.811500 (TP: 1623 FN: 377)
+Evaluate FPR on validation set:
+FPR: 0.003659 (FP: 9 TN: 2451)
+
+Training AdaBoost with 23 iterations
+Iteration: 23
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.407147, dimension: 52784, error: 0.399597, misclassified: 868, threshold: 91.000000, sign: positive
+Time: 208.980138 s
+DR: 0.026500 (TP: 53 FN: 1947)
+Decrease threshold to 3.734959
+DR: 0.096000 (TP: 192 FN: 1808)
+Decrease threshold to 2.734959
+DR: 0.241000 (TP: 482 FN: 1518)
+Decrease threshold to 1.734959
+DR: 0.487500 (TP: 975 FN: 1025)
+Decrease threshold to 0.734959
+DR: 0.690500 (TP: 1381 FN: 619)
+Decrease threshold to -0.265041
+DR: 0.774500 (TP: 1549 FN: 451)
+Decrease threshold to -1.265041
+DR: 0.811000 (TP: 1622 FN: 378)
+Evaluate FPR on validation set:
+FPR: 0.003659 (FP: 9 TN: 2451)
+
+Training AdaBoost with 24 iterations
+Iteration: 24
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.358086, dimension: 93747, error: 0.411423, misclassified: 1382, threshold: 20.000000, sign: negative
+Time: 208.553369 s
+DR: 0.017000 (TP: 34 FN: 1966)
+Decrease threshold to 3.914003
+DR: 0.066000 (TP: 132 FN: 1868)
+Decrease threshold to 2.914003
+DR: 0.232000 (TP: 464 FN: 1536)
+Decrease threshold to 1.914003
+DR: 0.466500 (TP: 933 FN: 1067)
+Decrease threshold to 0.914003
+DR: 0.640500 (TP: 1281 FN: 719)
+Decrease threshold to -0.085997
+DR: 0.751500 (TP: 1503 FN: 497)
+Decrease threshold to -1.085997
+DR: 0.803500 (TP: 1607 FN: 393)
+Evaluate FPR on validation set:
+FPR: 0.003659 (FP: 9 TN: 2451)
+
+Training AdaBoost with 25 iterations
+Iteration: 25
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.332632, dimension: 49095, error: 0.417600, misclassified: 1034, threshold: 1.000000, sign: negative
+Time: 223.628979 s
+DR: 0.015000 (TP: 30 FN: 1970)
+Decrease threshold to 4.080319
+DR: 0.087000 (TP: 174 FN: 1826)
+Decrease threshold to 3.080319
+DR: 0.253500 (TP: 507 FN: 1493)
+Decrease threshold to 2.080319
+DR: 0.442000 (TP: 884 FN: 1116)
+Decrease threshold to 1.080319
+DR: 0.621000 (TP: 1242 FN: 758)
+Decrease threshold to 0.080319
+DR: 0.747000 (TP: 1494 FN: 506)
+Decrease threshold to -0.919681
+DR: 0.801500 (TP: 1603 FN: 397)
+Evaluate FPR on validation set:
+FPR: 0.004065 (FP: 10 TN: 2450)
+
+Training AdaBoost with 26 iterations
+Iteration: 26
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.328409, dimension: 14597, error: 0.418628, misclassified: 1406, threshold: 58.000000, sign: negative
+Time: 235.007127 s
+DR: 0.015500 (TP: 31 FN: 1969)
+Decrease threshold to 4.244523
+DR: 0.082500 (TP: 165 FN: 1835)
+Decrease threshold to 3.244523
+DR: 0.197500 (TP: 395 FN: 1605)
+Decrease threshold to 2.244523
+DR: 0.387000 (TP: 774 FN: 1226)
+Decrease threshold to 1.244523
+DR: 0.606000 (TP: 1212 FN: 788)
+Decrease threshold to 0.244523
+DR: 0.730000 (TP: 1460 FN: 540)
+Decrease threshold to -0.755477
+DR: 0.794500 (TP: 1589 FN: 411)
+Evaluate FPR on validation set:
+FPR: 0.003252 (FP: 8 TN: 2452)
+
+Training AdaBoost with 27 iterations
+Iteration: 27
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.321767, dimension: 64310, error: 0.420245, misclassified: 990, threshold: -4.000000, sign: positive
+Time: 222.104385 s
+DR: 0.021500 (TP: 43 FN: 1957)
+Decrease threshold to 4.405406
+DR: 0.079000 (TP: 158 FN: 1842)
+Decrease threshold to 3.405406
+DR: 0.199500 (TP: 399 FN: 1601)
+Decrease threshold to 2.405406
+DR: 0.414500 (TP: 829 FN: 1171)
+Decrease threshold to 1.405406
+DR: 0.601000 (TP: 1202 FN: 798)
+Decrease threshold to 0.405406
+DR: 0.722500 (TP: 1445 FN: 555)
+Decrease threshold to -0.594594
+DR: 0.789000 (TP: 1578 FN: 422)
+Evaluate FPR on validation set:
+FPR: 0.002439 (FP: 6 TN: 2454)
+
+
+Generating negative set for layer: max 2000
+Added 269 (94910 tested) images to the negative set
+Stage n. 7, FPR: 0.002439, DR: 0.789000
+
+*** Stage n. 8 ***
+
+  -Training size: 2269
+  -Target FPR: 0.001220
+  -Target DR: 0.749550
+
+Training AdaBoost with 1 iterations
+Iteration: 1
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.588947, dimension: 64309, error: 0.356876, misclassified: 340, threshold: -81.000000, sign: negative
+Time: 186.373540 s
+DR: 0.720500 (TP: 1441 FN: 559)
+Decrease threshold to -0.705526
+DR: 0.789000 (TP: 1578 FN: 422)
+Evaluate FPR on validation set:
+FPR: 0.002439 (FP: 6 TN: 2454)
+
+Training AdaBoost with 2 iterations
+Iteration: 2
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.562162, dimension: 24190, error: 0.363047, misclassified: 1245, threshold: -589.000000, sign: positive
+Time: 156.266636 s
+DR: 0.318500 (TP: 637 FN: 1363)
+Decrease threshold to -0.424445
+DR: 0.759500 (TP: 1519 FN: 481)
+Evaluate FPR on validation set:
+FPR: 0.001626 (FP: 4 TN: 2456)
+
+Training AdaBoost with 3 iterations
+Iteration: 3
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.494468, dimension: 34745, error: 0.378842, misclassified: 498, threshold: -410.000000, sign: positive
+Time: 156.528526 s
+DR: 0.287500 (TP: 575 FN: 1425)
+Decrease threshold to -0.177211
+DR: 0.706500 (TP: 1413 FN: 587)
+Decrease threshold to -1.177211
+DR: 0.782000 (TP: 1564 FN: 436)
+Evaluate FPR on validation set:
+FPR: 0.001626 (FP: 4 TN: 2456)
+
+Training AdaBoost with 4 iterations
+Iteration: 4
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.515633, dimension: 99071, error: 0.373874, misclassified: 898, threshold: -5.000000, sign: positive
+Time: 166.641523 s
+DR: 0.307000 (TP: 614 FN: 1386)
+Decrease threshold to 0.080605
+DR: 0.570000 (TP: 1140 FN: 860)
+Decrease threshold to -0.919395
+DR: 0.750500 (TP: 1501 FN: 499)
+Evaluate FPR on validation set:
+FPR: 0.001626 (FP: 4 TN: 2456)
+
+Training AdaBoost with 5 iterations
+Iteration: 5
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.460662, dimension: 11576, error: 0.386829, misclassified: 1347, threshold: 172.000000, sign: negative
+Time: 156.225405 s
+DR: 0.328500 (TP: 657 FN: 1343)
+Decrease threshold to 0.310936
+DR: 0.642000 (TP: 1284 FN: 716)
+Decrease threshold to -0.689064
+DR: 0.758500 (TP: 1517 FN: 483)
+Evaluate FPR on validation set:
+FPR: 0.001626 (FP: 4 TN: 2456)
+
+Training AdaBoost with 6 iterations
+Iteration: 6
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.514905, dimension: 29688, error: 0.374044, misclassified: 529, threshold: -729.000000, sign: negative
+Time: 174.272909 s
+DR: 0.262000 (TP: 524 FN: 1476)
+Decrease threshold to 0.568388
+DR: 0.589500 (TP: 1179 FN: 821)
+Decrease threshold to -0.431612
+DR: 0.749000 (TP: 1498 FN: 502)
+Decrease threshold to -1.431612
+DR: 0.788500 (TP: 1577 FN: 423)
+Evaluate FPR on validation set:
+FPR: 0.002033 (FP: 5 TN: 2455)
+
+Training AdaBoost with 7 iterations
+Iteration: 7
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.481468, dimension: 103835, error: 0.381906, misclassified: 1607, threshold: 43.000000, sign: negative
+Time: 174.637082 s
+DR: 0.070000 (TP: 140 FN: 1860)
+Decrease threshold to 0.809122
+DR: 0.337500 (TP: 675 FN: 1325)
+Decrease threshold to -0.190878
+DR: 0.621500 (TP: 1243 FN: 757)
+Decrease threshold to -1.190878
+DR: 0.756000 (TP: 1512 FN: 488)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+
+Generating negative set for layer: max 2000
+Added 169 (94076 tested) images to the negative set
+Stage n. 8, FPR: 0.001220, DR: 0.756000
+
+*** Stage n. 9 ***
+
+  -Training size: 2169
+  -Target FPR: 0.000610
+  -Target DR: 0.718200
+
+Training AdaBoost with 1 iterations
+Iteration: 1
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.571475, dimension: 44388, error: 0.360896, misclassified: 501, threshold: -402.000000, sign: positive
+Time: 152.380920 s
+DR: 0.657000 (TP: 1314 FN: 686)
+Decrease threshold to -0.714262
+DR: 0.756000 (TP: 1512 FN: 488)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 2 iterations
+Iteration: 2
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.513770, dimension: 102251, error: 0.374310, misclassified: 1044, threshold: 14.000000, sign: negative
+Time: 147.692573 s
+DR: 0.342500 (TP: 685 FN: 1315)
+Decrease threshold to -0.457378
+DR: 0.709000 (TP: 1418 FN: 582)
+Decrease threshold to -1.457378
+DR: 0.756000 (TP: 1512 FN: 488)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 3 iterations
+Iteration: 3
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.524402, dimension: 93189, error: 0.371824, misclassified: 374, threshold: 133.000000, sign: positive
+Time: 147.899629 s
+DR: 0.289000 (TP: 578 FN: 1422)
+Decrease threshold to -0.195177
+DR: 0.678500 (TP: 1357 FN: 643)
+Decrease threshold to -1.195177
+DR: 0.754500 (TP: 1509 FN: 491)
+Evaluate FPR on validation set:
+FPR: 0.000813 (FP: 2 TN: 2458)
+
+Training AdaBoost with 4 iterations
+Iteration: 4
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.501802, dimension: 7301, error: 0.377117, misclassified: 998, threshold: -31.000000, sign: positive
+Time: 147.644466 s
+DR: 0.481000 (TP: 962 FN: 1038)
+Decrease threshold to 0.055724
+DR: 0.658000 (TP: 1316 FN: 684)
+Decrease threshold to -0.944276
+DR: 0.718000 (TP: 1436 FN: 564)
+Decrease threshold to -1.944276
+DR: 0.754500 (TP: 1509 FN: 491)
+Evaluate FPR on validation set:
+FPR: 0.000813 (FP: 2 TN: 2458)
+
+Training AdaBoost with 5 iterations
+Iteration: 5
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.541116, dimension: 96851, error: 0.367928, misclassified: 791, threshold: 199.000000, sign: positive
+Time: 147.760719 s
+DR: 0.380500 (TP: 761 FN: 1239)
+Decrease threshold to 0.326282
+DR: 0.647500 (TP: 1295 FN: 705)
+Decrease threshold to -0.673718
+DR: 0.745500 (TP: 1491 FN: 509)
+Evaluate FPR on validation set:
+FPR: 0.000813 (FP: 2 TN: 2458)
+
+Training AdaBoost with 6 iterations
+Iteration: 6
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.497838, dimension: 93552, error: 0.378049, misclassified: 851, threshold: 18.000000, sign: negative
+Time: 147.989805 s
+DR: 0.294000 (TP: 588 FN: 1412)
+Decrease threshold to 0.575201
+DR: 0.557000 (TP: 1114 FN: 886)
+Decrease threshold to -0.424799
+DR: 0.698000 (TP: 1396 FN: 604)
+Decrease threshold to -1.424799
+DR: 0.753500 (TP: 1507 FN: 493)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 7 iterations
+Iteration: 7
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.460682, dimension: 93750, error: 0.386824, misclassified: 1164, threshold: -21.000000, sign: positive
+Time: 148.843849 s
+DR: 0.181000 (TP: 362 FN: 1638)
+Decrease threshold to 0.805542
+DR: 0.408500 (TP: 817 FN: 1183)
+Decrease threshold to -0.194458
+DR: 0.618000 (TP: 1236 FN: 764)
+Decrease threshold to -1.194458
+DR: 0.723500 (TP: 1447 FN: 553)
+Evaluate FPR on validation set:
+FPR: 0.000813 (FP: 2 TN: 2458)
+
+Training AdaBoost with 8 iterations
+Iteration: 8
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.551053, dimension: 38869, error: 0.365620, misclassified: 316, threshold: 99.000000, sign: positive
+Time: 147.792306 s
+DR: 0.328500 (TP: 657 FN: 1343)
+Decrease threshold to 1.081068
+DR: 0.531500 (TP: 1063 FN: 937)
+Decrease threshold to 0.081068
+DR: 0.655000 (TP: 1310 FN: 690)
+Decrease threshold to -0.918932
+DR: 0.721000 (TP: 1442 FN: 558)
+Evaluate FPR on validation set:
+FPR: 0.000813 (FP: 2 TN: 2458)
+
+Training AdaBoost with 9 iterations
+Iteration: 9
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.516732, dimension: 57197, error: 0.373617, misclassified: 1641, threshold: 42.000000, sign: negative
+Time: 147.566141 s
+DR: 0.200500 (TP: 401 FN: 1599)
+Decrease threshold to 1.339434
+DR: 0.420000 (TP: 840 FN: 1160)
+Decrease threshold to 0.339434
+DR: 0.622000 (TP: 1244 FN: 756)
+Decrease threshold to -0.660566
+DR: 0.722500 (TP: 1445 FN: 555)
+Evaluate FPR on validation set:
+FPR: 0.000813 (FP: 2 TN: 2458)
+
+Training AdaBoost with 10 iterations
+Iteration: 10
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.543818, dimension: 64301, error: 0.367300, misclassified: 250, threshold: -68.000000, sign: negative
+Time: 147.628159 s
+DR: 0.188500 (TP: 377 FN: 1623)
+Decrease threshold to 1.611344
+DR: 0.411000 (TP: 822 FN: 1178)
+Decrease threshold to 0.611344
+DR: 0.611000 (TP: 1222 FN: 778)
+Decrease threshold to -0.388656
+DR: 0.712500 (TP: 1425 FN: 575)
+Decrease threshold to -1.388656
+DR: 0.749000 (TP: 1498 FN: 502)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 11 iterations
+Iteration: 11
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.485190, dimension: 59096, error: 0.381027, misclassified: 1698, threshold: -90.000000, sign: positive
+Time: 147.708784 s
+DR: 0.048000 (TP: 96 FN: 1904)
+Decrease threshold to 1.853939
+DR: 0.215500 (TP: 431 FN: 1569)
+Decrease threshold to 0.853939
+DR: 0.451500 (TP: 903 FN: 1097)
+Decrease threshold to -0.146061
+DR: 0.635000 (TP: 1270 FN: 730)
+Decrease threshold to -1.146061
+DR: 0.721000 (TP: 1442 FN: 558)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 12 iterations
+Iteration: 12
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.566550, dimension: 53800, error: 0.362033, misclassified: 283, threshold: 100.000000, sign: positive
+Time: 147.667228 s
+DR: 0.192000 (TP: 384 FN: 1616)
+Decrease threshold to 2.137213
+DR: 0.394000 (TP: 788 FN: 1212)
+Decrease threshold to 1.137213
+DR: 0.573500 (TP: 1147 FN: 853)
+Decrease threshold to 0.137213
+DR: 0.672000 (TP: 1344 FN: 656)
+Decrease threshold to -0.862787
+DR: 0.728000 (TP: 1456 FN: 544)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 13 iterations
+Iteration: 13
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.479876, dimension: 49208, error: 0.382282, misclassified: 992, threshold: 62.000000, sign: negative
+Time: 147.544932 s
+DR: 0.137500 (TP: 275 FN: 1725)
+Decrease threshold to 2.377151
+DR: 0.332000 (TP: 664 FN: 1336)
+Decrease threshold to 1.377151
+DR: 0.530000 (TP: 1060 FN: 940)
+Decrease threshold to 0.377151
+DR: 0.678000 (TP: 1356 FN: 644)
+Decrease threshold to -0.622849
+DR: 0.734000 (TP: 1468 FN: 532)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 14 iterations
+Iteration: 14
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.475506, dimension: 12706, error: 0.383314, misclassified: 1451, threshold: -190.000000, sign: positive
+Time: 147.490457 s
+DR: 0.051500 (TP: 103 FN: 1897)
+Decrease threshold to 2.614904
+DR: 0.194000 (TP: 388 FN: 1612)
+Decrease threshold to 1.614904
+DR: 0.399000 (TP: 798 FN: 1202)
+Decrease threshold to 0.614904
+DR: 0.575500 (TP: 1151 FN: 849)
+Decrease threshold to -0.385096
+DR: 0.707000 (TP: 1414 FN: 586)
+Decrease threshold to -1.385096
+DR: 0.740500 (TP: 1481 FN: 519)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 15 iterations
+Iteration: 15
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.538713, dimension: 49164, error: 0.368487, misclassified: 310, threshold: 80.000000, sign: positive
+Time: 147.630571 s
+DR: 0.065000 (TP: 130 FN: 1870)
+Decrease threshold to 2.884260
+DR: 0.196000 (TP: 392 FN: 1608)
+Decrease threshold to 1.884260
+DR: 0.397000 (TP: 794 FN: 1206)
+Decrease threshold to 0.884260
+DR: 0.573500 (TP: 1147 FN: 853)
+Decrease threshold to -0.115740
+DR: 0.694500 (TP: 1389 FN: 611)
+Decrease threshold to -1.115740
+DR: 0.736000 (TP: 1472 FN: 528)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 16 iterations
+Iteration: 16
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.541791, dimension: 100592, error: 0.367771, misclassified: 945, threshold: -116.000000, sign: positive
+Time: 147.479753 s
+DR: 0.113500 (TP: 227 FN: 1773)
+Decrease threshold to 3.155156
+DR: 0.280500 (TP: 561 FN: 1439)
+Decrease threshold to 2.155156
+DR: 0.449500 (TP: 899 FN: 1101)
+Decrease threshold to 1.155156
+DR: 0.604500 (TP: 1209 FN: 791)
+Decrease threshold to 0.155156
+DR: 0.689500 (TP: 1379 FN: 621)
+Decrease threshold to -0.844844
+DR: 0.734500 (TP: 1469 FN: 531)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 17 iterations
+Iteration: 17
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.462812, dimension: 94214, error: 0.386319, misclassified: 593, threshold: 46.000000, sign: positive
+Time: 147.705099 s
+DR: 0.096000 (TP: 192 FN: 1808)
+Decrease threshold to 3.386562
+DR: 0.246500 (TP: 493 FN: 1507)
+Decrease threshold to 2.386562
+DR: 0.435000 (TP: 870 FN: 1130)
+Decrease threshold to 1.386562
+DR: 0.596000 (TP: 1192 FN: 808)
+Decrease threshold to 0.386562
+DR: 0.707500 (TP: 1415 FN: 585)
+Decrease threshold to -0.613438
+DR: 0.740000 (TP: 1480 FN: 520)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 18 iterations
+Iteration: 18
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.530104, dimension: 14803, error: 0.370493, misclassified: 1616, threshold: 55.000000, sign: negative
+Time: 147.664352 s
+DR: 0.033000 (TP: 66 FN: 1934)
+Decrease threshold to 3.651614
+DR: 0.113000 (TP: 226 FN: 1774)
+Decrease threshold to 2.651614
+DR: 0.280500 (TP: 561 FN: 1439)
+Decrease threshold to 1.651614
+DR: 0.466000 (TP: 932 FN: 1068)
+Decrease threshold to 0.651614
+DR: 0.617500 (TP: 1235 FN: 765)
+Decrease threshold to -0.348386
+DR: 0.716500 (TP: 1433 FN: 567)
+Decrease threshold to -1.348386
+DR: 0.743500 (TP: 1487 FN: 513)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 19 iterations
+Iteration: 19
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.600794, dimension: 49021, error: 0.354162, misclassified: 403, threshold: -22.000000, sign: negative
+Time: 147.583779 s
+DR: 0.044500 (TP: 89 FN: 1911)
+Decrease threshold to 3.952011
+DR: 0.123500 (TP: 247 FN: 1753)
+Decrease threshold to 2.952011
+DR: 0.282500 (TP: 565 FN: 1435)
+Decrease threshold to 1.952011
+DR: 0.458000 (TP: 916 FN: 1084)
+Decrease threshold to 0.952011
+DR: 0.604500 (TP: 1209 FN: 791)
+Decrease threshold to -0.047989
+DR: 0.707000 (TP: 1414 FN: 586)
+Decrease threshold to -1.047989
+DR: 0.739500 (TP: 1479 FN: 521)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 20 iterations
+Iteration: 20
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.480688, dimension: 100608, error: 0.382090, misclassified: 1143, threshold: -27.000000, sign: positive
+Time: 147.689363 s
+DR: 0.055000 (TP: 110 FN: 1890)
+Decrease threshold to 4.192355
+DR: 0.156000 (TP: 312 FN: 1688)
+Decrease threshold to 3.192355
+DR: 0.315500 (TP: 631 FN: 1369)
+Decrease threshold to 2.192355
+DR: 0.474000 (TP: 948 FN: 1052)
+Decrease threshold to 1.192355
+DR: 0.607500 (TP: 1215 FN: 785)
+Decrease threshold to 0.192355
+DR: 0.690000 (TP: 1380 FN: 620)
+Decrease threshold to -0.807645
+DR: 0.734500 (TP: 1469 FN: 531)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 21 iterations
+Iteration: 21
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.466092, dimension: 22838, error: 0.385542, misclassified: 854, threshold: -54.000000, sign: positive
+Time: 147.846761 s
+DR: 0.047000 (TP: 94 FN: 1906)
+Decrease threshold to 4.425401
+DR: 0.140000 (TP: 280 FN: 1720)
+Decrease threshold to 3.425401
+DR: 0.279000 (TP: 558 FN: 1442)
+Decrease threshold to 2.425401
+DR: 0.454500 (TP: 909 FN: 1091)
+Decrease threshold to 1.425401
+DR: 0.600500 (TP: 1201 FN: 799)
+Decrease threshold to 0.425401
+DR: 0.695000 (TP: 1390 FN: 610)
+Decrease threshold to -0.574599
+DR: 0.737500 (TP: 1475 FN: 525)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 22 iterations
+Iteration: 22
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.469221, dimension: 10883, error: 0.384801, misclassified: 692, threshold: -332.000000, sign: positive
+Time: 147.704046 s
+DR: 0.031500 (TP: 63 FN: 1937)
+Decrease threshold to 4.660012
+DR: 0.105500 (TP: 211 FN: 1789)
+Decrease threshold to 3.660012
+DR: 0.233500 (TP: 467 FN: 1533)
+Decrease threshold to 2.660012
+DR: 0.400500 (TP: 801 FN: 1199)
+Decrease threshold to 1.660012
+DR: 0.556000 (TP: 1112 FN: 888)
+Decrease threshold to 0.660012
+DR: 0.668500 (TP: 1337 FN: 663)
+Decrease threshold to -0.339988
+DR: 0.728500 (TP: 1457 FN: 543)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 23 iterations
+Iteration: 23
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.449968, dimension: 62698, error: 0.389368, misclassified: 879, threshold: 1796.000000, sign: positive
+Time: 147.612891 s
+DR: 0.030000 (TP: 60 FN: 1940)
+Decrease threshold to 4.884995
+DR: 0.092500 (TP: 185 FN: 1815)
+Decrease threshold to 3.884995
+DR: 0.206000 (TP: 412 FN: 1588)
+Decrease threshold to 2.884995
+DR: 0.371000 (TP: 742 FN: 1258)
+Decrease threshold to 1.884995
+DR: 0.529000 (TP: 1058 FN: 942)
+Decrease threshold to 0.884995
+DR: 0.639000 (TP: 1278 FN: 722)
+Decrease threshold to -0.115005
+DR: 0.714000 (TP: 1428 FN: 572)
+Decrease threshold to -1.115005
+DR: 0.742000 (TP: 1484 FN: 516)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 24 iterations
+Iteration: 24
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.434787, dimension: 2114, error: 0.392984, misclassified: 1588, threshold: -214.000000, sign: positive
+Time: 147.741602 s
+DR: 0.029500 (TP: 59 FN: 1941)
+Decrease threshold to 5.102389
+DR: 0.089500 (TP: 179 FN: 1821)
+Decrease threshold to 4.102389
+DR: 0.197500 (TP: 395 FN: 1605)
+Decrease threshold to 3.102389
+DR: 0.349500 (TP: 699 FN: 1301)
+Decrease threshold to 2.102389
+DR: 0.503500 (TP: 1007 FN: 993)
+Decrease threshold to 1.102389
+DR: 0.631500 (TP: 1263 FN: 737)
+Decrease threshold to 0.102389
+DR: 0.705000 (TP: 1410 FN: 590)
+Decrease threshold to -0.897611
+DR: 0.739500 (TP: 1479 FN: 521)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 25 iterations
+Iteration: 25
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.536557, dimension: 97004, error: 0.368989, misclassified: 430, threshold: -68.000000, sign: negative
+Time: 147.624991 s
+DR: 0.026000 (TP: 52 FN: 1948)
+Decrease threshold to 5.370667
+DR: 0.084000 (TP: 168 FN: 1832)
+Decrease threshold to 4.370667
+DR: 0.189000 (TP: 378 FN: 1622)
+Decrease threshold to 3.370667
+DR: 0.337500 (TP: 675 FN: 1325)
+Decrease threshold to 2.370667
+DR: 0.499500 (TP: 999 FN: 1001)
+Decrease threshold to 1.370667
+DR: 0.633000 (TP: 1266 FN: 734)
+Decrease threshold to 0.370667
+DR: 0.706000 (TP: 1412 FN: 588)
+Decrease threshold to -0.629333
+DR: 0.741000 (TP: 1482 FN: 518)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 26 iterations
+Iteration: 26
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.457692, dimension: 95455, error: 0.387533, misclassified: 671, threshold: 7.000000, sign: negative
+Time: 147.643534 s
+DR: 0.023000 (TP: 46 FN: 1954)
+Decrease threshold to 5.599513
+DR: 0.072500 (TP: 145 FN: 1855)
+Decrease threshold to 4.599513
+DR: 0.167000 (TP: 334 FN: 1666)
+Decrease threshold to 3.599513
+DR: 0.315000 (TP: 630 FN: 1370)
+Decrease threshold to 2.599513
+DR: 0.464000 (TP: 928 FN: 1072)
+Decrease threshold to 1.599513
+DR: 0.602500 (TP: 1205 FN: 795)
+Decrease threshold to 0.599513
+DR: 0.688000 (TP: 1376 FN: 624)
+Decrease threshold to -0.400487
+DR: 0.735000 (TP: 1470 FN: 530)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 27 iterations
+Iteration: 27
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.474539, dimension: 26569, error: 0.383543, misclassified: 1180, threshold: 1150.000000, sign: negative
+Time: 147.682025 s
+DR: 0.021500 (TP: 43 FN: 1957)
+Decrease threshold to 5.836782
+DR: 0.065000 (TP: 130 FN: 1870)
+Decrease threshold to 4.836782
+DR: 0.150500 (TP: 301 FN: 1699)
+Decrease threshold to 3.836782
+DR: 0.283000 (TP: 566 FN: 1434)
+Decrease threshold to 2.836782
+DR: 0.436000 (TP: 872 FN: 1128)
+Decrease threshold to 1.836782
+DR: 0.569000 (TP: 1138 FN: 862)
+Decrease threshold to 0.836782
+DR: 0.669500 (TP: 1339 FN: 661)
+Decrease threshold to -0.163218
+DR: 0.720500 (TP: 1441 FN: 559)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 28 iterations
+Iteration: 28
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.465973, dimension: 11041, error: 0.385570, misclassified: 867, threshold: -37.000000, sign: positive
+Time: 147.757591 s
+DR: 0.024000 (TP: 48 FN: 1952)
+Decrease threshold to 6.069769
+DR: 0.071000 (TP: 142 FN: 1858)
+Decrease threshold to 5.069769
+DR: 0.164000 (TP: 328 FN: 1672)
+Decrease threshold to 4.069769
+DR: 0.299000 (TP: 598 FN: 1402)
+Decrease threshold to 3.069769
+DR: 0.447000 (TP: 894 FN: 1106)
+Decrease threshold to 2.069769
+DR: 0.582500 (TP: 1165 FN: 835)
+Decrease threshold to 1.069769
+DR: 0.669500 (TP: 1339 FN: 661)
+Decrease threshold to 0.069769
+DR: 0.725000 (TP: 1450 FN: 550)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 29 iterations
+Iteration: 29
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.506666, dimension: 100867, error: 0.375976, misclassified: 905, threshold: -33.000000, sign: negative
+Time: 147.678379 s
+DR: 0.020500 (TP: 41 FN: 1959)
+Decrease threshold to 6.323102
+DR: 0.057000 (TP: 114 FN: 1886)
+Decrease threshold to 5.323102
+DR: 0.135000 (TP: 270 FN: 1730)
+Decrease threshold to 4.323102
+DR: 0.256500 (TP: 513 FN: 1487)
+Decrease threshold to 3.323102
+DR: 0.403000 (TP: 806 FN: 1194)
+Decrease threshold to 2.323102
+DR: 0.532000 (TP: 1064 FN: 936)
+Decrease threshold to 1.323102
+DR: 0.643500 (TP: 1287 FN: 713)
+Decrease threshold to 0.323102
+DR: 0.709000 (TP: 1418 FN: 582)
+Decrease threshold to -0.676898
+DR: 0.743500 (TP: 1487 FN: 513)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 30 iterations
+Iteration: 30
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.394588, dimension: 49036, error: 0.402613, misclassified: 497, threshold: 22.000000, sign: positive
+Time: 147.726560 s
+DR: 0.017500 (TP: 35 FN: 1965)
+Decrease threshold to 6.520396
+DR: 0.051000 (TP: 102 FN: 1898)
+Decrease threshold to 5.520396
+DR: 0.125500 (TP: 251 FN: 1749)
+Decrease threshold to 4.520396
+DR: 0.243500 (TP: 487 FN: 1513)
+Decrease threshold to 3.520396
+DR: 0.387500 (TP: 775 FN: 1225)
+Decrease threshold to 2.520396
+DR: 0.521500 (TP: 1043 FN: 957)
+Decrease threshold to 1.520396
+DR: 0.630000 (TP: 1260 FN: 740)
+Decrease threshold to 0.520396
+DR: 0.701000 (TP: 1402 FN: 598)
+Decrease threshold to -0.479604
+DR: 0.738000 (TP: 1476 FN: 524)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 31 iterations
+Iteration: 31
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.451801, dimension: 4047, error: 0.388933, misclassified: 1387, threshold: 13.000000, sign: negative
+Time: 147.542107 s
+DR: 0.014500 (TP: 29 FN: 1971)
+Decrease threshold to 6.746296
+DR: 0.042000 (TP: 84 FN: 1916)
+Decrease threshold to 5.746296
+DR: 0.104500 (TP: 209 FN: 1791)
+Decrease threshold to 4.746296
+DR: 0.211000 (TP: 422 FN: 1578)
+Decrease threshold to 3.746296
+DR: 0.359500 (TP: 719 FN: 1281)
+Decrease threshold to 2.746296
+DR: 0.489000 (TP: 978 FN: 1022)
+Decrease threshold to 1.746296
+DR: 0.606500 (TP: 1213 FN: 787)
+Decrease threshold to 0.746296
+DR: 0.684000 (TP: 1368 FN: 632)
+Decrease threshold to -0.253704
+DR: 0.729500 (TP: 1459 FN: 541)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 32 iterations
+Iteration: 32
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.429070, dimension: 58370, error: 0.394349, misclassified: 540, threshold: -67.000000, sign: negative
+Time: 147.605801 s
+DR: 0.017000 (TP: 34 FN: 1966)
+Decrease threshold to 6.960831
+DR: 0.054500 (TP: 109 FN: 1891)
+Decrease threshold to 5.960831
+DR: 0.124000 (TP: 248 FN: 1752)
+Decrease threshold to 4.960831
+DR: 0.240000 (TP: 480 FN: 1520)
+Decrease threshold to 3.960831
+DR: 0.379500 (TP: 759 FN: 1241)
+Decrease threshold to 2.960831
+DR: 0.502000 (TP: 1004 FN: 996)
+Decrease threshold to 1.960831
+DR: 0.614000 (TP: 1228 FN: 772)
+Decrease threshold to 0.960831
+DR: 0.693000 (TP: 1386 FN: 614)
+Decrease threshold to -0.039169
+DR: 0.729500 (TP: 1459 FN: 541)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 33 iterations
+Iteration: 33
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.395733, dimension: 11178, error: 0.402338, misclassified: 1322, threshold: -99.000000, sign: positive
+Time: 147.531810 s
+DR: 0.011000 (TP: 22 FN: 1978)
+Decrease threshold to 7.158697
+DR: 0.035500 (TP: 71 FN: 1929)
+Decrease threshold to 6.158697
+DR: 0.095500 (TP: 191 FN: 1809)
+Decrease threshold to 5.158697
+DR: 0.189500 (TP: 379 FN: 1621)
+Decrease threshold to 4.158697
+DR: 0.305000 (TP: 610 FN: 1390)
+Decrease threshold to 3.158697
+DR: 0.445000 (TP: 890 FN: 1110)
+Decrease threshold to 2.158697
+DR: 0.563000 (TP: 1126 FN: 874)
+Decrease threshold to 1.158697
+DR: 0.659500 (TP: 1319 FN: 681)
+Decrease threshold to 0.158697
+DR: 0.715000 (TP: 1430 FN: 570)
+Decrease threshold to -0.841303
+DR: 0.741000 (TP: 1482 FN: 518)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 34 iterations
+Iteration: 34
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.458337, dimension: 82174, error: 0.387381, misclassified: 593, threshold: 249.000000, sign: negative
+Time: 147.614420 s
+DR: 0.009500 (TP: 19 FN: 1981)
+Decrease threshold to 7.387865
+DR: 0.031000 (TP: 62 FN: 1938)
+Decrease threshold to 6.387865
+DR: 0.089500 (TP: 179 FN: 1821)
+Decrease threshold to 5.387865
+DR: 0.184500 (TP: 369 FN: 1631)
+Decrease threshold to 4.387865
+DR: 0.301500 (TP: 603 FN: 1397)
+Decrease threshold to 3.387865
+DR: 0.438500 (TP: 877 FN: 1123)
+Decrease threshold to 2.387865
+DR: 0.556000 (TP: 1112 FN: 888)
+Decrease threshold to 1.387865
+DR: 0.656000 (TP: 1312 FN: 688)
+Decrease threshold to 0.387865
+DR: 0.714000 (TP: 1428 FN: 572)
+Decrease threshold to -0.612135
+DR: 0.739500 (TP: 1479 FN: 521)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 35 iterations
+Iteration: 35
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.432666, dimension: 52813, error: 0.393490, misclassified: 733, threshold: -1.000000, sign: negative
+Time: 147.499926 s
+DR: 0.012000 (TP: 24 FN: 1976)
+Decrease threshold to 7.604198
+DR: 0.034500 (TP: 69 FN: 1931)
+Decrease threshold to 6.604198
+DR: 0.103500 (TP: 207 FN: 1793)
+Decrease threshold to 5.604198
+DR: 0.194000 (TP: 388 FN: 1612)
+Decrease threshold to 4.604198
+DR: 0.325000 (TP: 650 FN: 1350)
+Decrease threshold to 3.604198
+DR: 0.445000 (TP: 890 FN: 1110)
+Decrease threshold to 2.604198
+DR: 0.565000 (TP: 1130 FN: 870)
+Decrease threshold to 1.604198
+DR: 0.658000 (TP: 1316 FN: 684)
+Decrease threshold to 0.604198
+DR: 0.711000 (TP: 1422 FN: 578)
+Decrease threshold to -0.395802
+DR: 0.741500 (TP: 1483 FN: 517)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 36 iterations
+Iteration: 36
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.426177, dimension: 67093, error: 0.395040, misclassified: 547, threshold: 489.000000, sign: positive
+Time: 146.471722 s
+DR: 0.018500 (TP: 37 FN: 1963)
+Decrease threshold to 7.817287
+DR: 0.047500 (TP: 95 FN: 1905)
+Decrease threshold to 6.817287
+DR: 0.108500 (TP: 217 FN: 1783)
+Decrease threshold to 5.817287
+DR: 0.202500 (TP: 405 FN: 1595)
+Decrease threshold to 4.817287
+DR: 0.326500 (TP: 653 FN: 1347)
+Decrease threshold to 3.817287
+DR: 0.447000 (TP: 894 FN: 1106)
+Decrease threshold to 2.817287
+DR: 0.561500 (TP: 1123 FN: 877)
+Decrease threshold to 1.817287
+DR: 0.653500 (TP: 1307 FN: 693)
+Decrease threshold to 0.817287
+DR: 0.709500 (TP: 1419 FN: 581)
+Decrease threshold to -0.182713
+DR: 0.739000 (TP: 1478 FN: 522)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 37 iterations
+Iteration: 37
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.491787, dimension: 102071, error: 0.379473, misclassified: 1744, threshold: -132.000000, sign: positive
+Time: 135.448023 s
+DR: 0.007000 (TP: 14 FN: 1986)
+Decrease threshold to 8.063181
+DR: 0.022500 (TP: 45 FN: 1955)
+Decrease threshold to 7.063181
+DR: 0.058500 (TP: 117 FN: 1883)
+Decrease threshold to 6.063181
+DR: 0.127500 (TP: 255 FN: 1745)
+Decrease threshold to 5.063181
+DR: 0.229000 (TP: 458 FN: 1542)
+Decrease threshold to 4.063181
+DR: 0.358500 (TP: 717 FN: 1283)
+Decrease threshold to 3.063181
+DR: 0.478500 (TP: 957 FN: 1043)
+Decrease threshold to 2.063181
+DR: 0.590500 (TP: 1181 FN: 819)
+Decrease threshold to 1.063181
+DR: 0.670500 (TP: 1341 FN: 659)
+Decrease threshold to 0.063181
+DR: 0.718000 (TP: 1436 FN: 564)
+Decrease threshold to -0.936819
+DR: 0.742500 (TP: 1485 FN: 515)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 38 iterations
+Iteration: 38
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.500132, dimension: 30046, error: 0.377510, misclassified: 329, threshold: -16.000000, sign: negative
+Time: 148.336303 s
+DR: 0.007500 (TP: 15 FN: 1985)
+Decrease threshold to 8.313247
+DR: 0.023000 (TP: 46 FN: 1954)
+Decrease threshold to 7.313247
+DR: 0.062500 (TP: 125 FN: 1875)
+Decrease threshold to 6.313247
+DR: 0.141500 (TP: 283 FN: 1717)
+Decrease threshold to 5.313247
+DR: 0.253000 (TP: 506 FN: 1494)
+Decrease threshold to 4.313247
+DR: 0.379500 (TP: 759 FN: 1241)
+Decrease threshold to 3.313247
+DR: 0.499500 (TP: 999 FN: 1001)
+Decrease threshold to 2.313247
+DR: 0.599000 (TP: 1198 FN: 802)
+Decrease threshold to 1.313247
+DR: 0.678500 (TP: 1357 FN: 643)
+Decrease threshold to 0.313247
+DR: 0.723500 (TP: 1447 FN: 553)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 39 iterations
+Iteration: 39
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.443899, dimension: 18031, error: 0.390812, misclassified: 1282, threshold: 611.000000, sign: negative
+Time: 135.007429 s
+DR: 0.004500 (TP: 9 FN: 1991)
+Decrease threshold to 8.535196
+DR: 0.018500 (TP: 37 FN: 1963)
+Decrease threshold to 7.535196
+DR: 0.055500 (TP: 111 FN: 1889)
+Decrease threshold to 6.535196
+DR: 0.126000 (TP: 252 FN: 1748)
+Decrease threshold to 5.535196
+DR: 0.233500 (TP: 467 FN: 1533)
+Decrease threshold to 4.535196
+DR: 0.360500 (TP: 721 FN: 1279)
+Decrease threshold to 3.535196
+DR: 0.479000 (TP: 958 FN: 1042)
+Decrease threshold to 2.535196
+DR: 0.590000 (TP: 1180 FN: 820)
+Decrease threshold to 1.535196
+DR: 0.665500 (TP: 1331 FN: 669)
+Decrease threshold to 0.535196
+DR: 0.712500 (TP: 1425 FN: 575)
+Decrease threshold to -0.464804
+DR: 0.741000 (TP: 1482 FN: 518)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 40 iterations
+Iteration: 40
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.460666, dimension: 101428, error: 0.386828, misclassified: 630, threshold: 534.000000, sign: positive
+Time: 135.959906 s
+DR: 0.007000 (TP: 14 FN: 1986)
+Decrease threshold to 8.765529
+DR: 0.021500 (TP: 43 FN: 1957)
+Decrease threshold to 7.765529
+DR: 0.052000 (TP: 104 FN: 1896)
+Decrease threshold to 6.765529
+DR: 0.130000 (TP: 260 FN: 1740)
+Decrease threshold to 5.765529
+DR: 0.226000 (TP: 452 FN: 1548)
+Decrease threshold to 4.765529
+DR: 0.355500 (TP: 711 FN: 1289)
+Decrease threshold to 3.765529
+DR: 0.474500 (TP: 949 FN: 1051)
+Decrease threshold to 2.765529
+DR: 0.575000 (TP: 1150 FN: 850)
+Decrease threshold to 1.765529
+DR: 0.666000 (TP: 1332 FN: 668)
+Decrease threshold to 0.765529
+DR: 0.710000 (TP: 1420 FN: 580)
+Decrease threshold to -0.234471
+DR: 0.739000 (TP: 1478 FN: 522)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 41 iterations
+Iteration: 41
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.442325, dimension: 98067, error: 0.391187, misclassified: 1099, threshold: -20.000000, sign: positive
+Time: 147.436645 s
+DR: 0.004000 (TP: 8 FN: 1992)
+Decrease threshold to 8.986692
+DR: 0.017000 (TP: 34 FN: 1966)
+Decrease threshold to 7.986692
+DR: 0.038000 (TP: 76 FN: 1924)
+Decrease threshold to 6.986692
+DR: 0.094500 (TP: 189 FN: 1811)
+Decrease threshold to 5.986692
+DR: 0.183500 (TP: 367 FN: 1633)
+Decrease threshold to 4.986692
+DR: 0.307500 (TP: 615 FN: 1385)
+Decrease threshold to 3.986692
+DR: 0.440000 (TP: 880 FN: 1120)
+Decrease threshold to 2.986692
+DR: 0.538500 (TP: 1077 FN: 923)
+Decrease threshold to 1.986692
+DR: 0.639500 (TP: 1279 FN: 721)
+Decrease threshold to 0.986692
+DR: 0.701000 (TP: 1402 FN: 598)
+Decrease threshold to -0.013308
+DR: 0.734000 (TP: 1468 FN: 532)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 42 iterations
+Iteration: 42
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.393863, dimension: 64045, error: 0.402788, misclassified: 1137, threshold: -12.000000, sign: positive
+Time: 155.136315 s
+DR: 0.003000 (TP: 6 FN: 1994)
+Decrease threshold to 9.183623
+DR: 0.013500 (TP: 27 FN: 1973)
+Decrease threshold to 8.183623
+DR: 0.029000 (TP: 58 FN: 1942)
+Decrease threshold to 7.183623
+DR: 0.080500 (TP: 161 FN: 1839)
+Decrease threshold to 6.183623
+DR: 0.163500 (TP: 327 FN: 1673)
+Decrease threshold to 5.183623
+DR: 0.286500 (TP: 573 FN: 1427)
+Decrease threshold to 4.183623
+DR: 0.420500 (TP: 841 FN: 1159)
+Decrease threshold to 3.183623
+DR: 0.532500 (TP: 1065 FN: 935)
+Decrease threshold to 2.183623
+DR: 0.627500 (TP: 1255 FN: 745)
+Decrease threshold to 1.183623
+DR: 0.692000 (TP: 1384 FN: 616)
+Decrease threshold to 0.183623
+DR: 0.730000 (TP: 1460 FN: 540)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 43 iterations
+Iteration: 43
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.429170, dimension: 75030, error: 0.394325, misclassified: 684, threshold: 1535.000000, sign: positive
+Time: 148.775922 s
+DR: 0.004000 (TP: 8 FN: 1992)
+Decrease threshold to 9.398208
+DR: 0.016500 (TP: 33 FN: 1967)
+Decrease threshold to 8.398208
+DR: 0.034500 (TP: 69 FN: 1931)
+Decrease threshold to 7.398208
+DR: 0.095000 (TP: 190 FN: 1810)
+Decrease threshold to 6.398208
+DR: 0.176500 (TP: 353 FN: 1647)
+Decrease threshold to 5.398208
+DR: 0.306000 (TP: 612 FN: 1388)
+Decrease threshold to 4.398208
+DR: 0.417000 (TP: 834 FN: 1166)
+Decrease threshold to 3.398208
+DR: 0.534500 (TP: 1069 FN: 931)
+Decrease threshold to 2.398208
+DR: 0.626000 (TP: 1252 FN: 748)
+Decrease threshold to 1.398208
+DR: 0.693000 (TP: 1386 FN: 614)
+Decrease threshold to 0.398208
+DR: 0.728000 (TP: 1456 FN: 544)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 44 iterations
+Iteration: 44
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.440521, dimension: 72672, error: 0.391617, misclassified: 1152, threshold: 517.000000, sign: negative
+Time: 164.366400 s
+DR: 0.004000 (TP: 8 FN: 1992)
+Decrease threshold to 9.618469
+DR: 0.012500 (TP: 25 FN: 1975)
+Decrease threshold to 8.618469
+DR: 0.029000 (TP: 58 FN: 1942)
+Decrease threshold to 7.618469
+DR: 0.074000 (TP: 148 FN: 1852)
+Decrease threshold to 6.618469
+DR: 0.151500 (TP: 303 FN: 1697)
+Decrease threshold to 5.618469
+DR: 0.254500 (TP: 509 FN: 1491)
+Decrease threshold to 4.618469
+DR: 0.381000 (TP: 762 FN: 1238)
+Decrease threshold to 3.618469
+DR: 0.489500 (TP: 979 FN: 1021)
+Decrease threshold to 2.618469
+DR: 0.595500 (TP: 1191 FN: 809)
+Decrease threshold to 1.618469
+DR: 0.670000 (TP: 1340 FN: 660)
+Decrease threshold to 0.618469
+DR: 0.716000 (TP: 1432 FN: 568)
+Decrease threshold to -0.381531
+DR: 0.737000 (TP: 1474 FN: 526)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 45 iterations
+Iteration: 45
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.428351, dimension: 82329, error: 0.394520, misclassified: 259, threshold: 682.000000, sign: positive
+Time: 170.371649 s
+DR: 0.004000 (TP: 8 FN: 1992)
+Decrease threshold to 9.832644
+DR: 0.012500 (TP: 25 FN: 1975)
+Decrease threshold to 8.832644
+DR: 0.029000 (TP: 58 FN: 1942)
+Decrease threshold to 7.832644
+DR: 0.075000 (TP: 150 FN: 1850)
+Decrease threshold to 6.832644
+DR: 0.155000 (TP: 310 FN: 1690)
+Decrease threshold to 5.832644
+DR: 0.267500 (TP: 535 FN: 1465)
+Decrease threshold to 4.832644
+DR: 0.391500 (TP: 783 FN: 1217)
+Decrease threshold to 3.832644
+DR: 0.505500 (TP: 1011 FN: 989)
+Decrease threshold to 2.832644
+DR: 0.604500 (TP: 1209 FN: 791)
+Decrease threshold to 1.832644
+DR: 0.674500 (TP: 1349 FN: 651)
+Decrease threshold to 0.832644
+DR: 0.724500 (TP: 1449 FN: 551)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 46 iterations
+Iteration: 46
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.489804, dimension: 49168, error: 0.379940, misclassified: 1781, threshold: -133.000000, sign: positive
+Time: 165.629793 s
+DR: 0.002000 (TP: 4 FN: 1996)
+Decrease threshold to 10.077546
+DR: 0.007500 (TP: 15 FN: 1985)
+Decrease threshold to 9.077546
+DR: 0.019500 (TP: 39 FN: 1961)
+Decrease threshold to 8.077546
+DR: 0.046000 (TP: 92 FN: 1908)
+Decrease threshold to 7.077546
+DR: 0.108000 (TP: 216 FN: 1784)
+Decrease threshold to 6.077546
+DR: 0.200500 (TP: 401 FN: 1599)
+Decrease threshold to 5.077546
+DR: 0.319000 (TP: 638 FN: 1362)
+Decrease threshold to 4.077546
+DR: 0.444500 (TP: 889 FN: 1111)
+Decrease threshold to 3.077546
+DR: 0.552000 (TP: 1104 FN: 896)
+Decrease threshold to 2.077546
+DR: 0.637000 (TP: 1274 FN: 726)
+Decrease threshold to 1.077546
+DR: 0.698500 (TP: 1397 FN: 603)
+Decrease threshold to 0.077546
+DR: 0.731000 (TP: 1462 FN: 538)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 47 iterations
+Iteration: 47
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.504201, dimension: 27438, error: 0.376554, misclassified: 330, threshold: 229.000000, sign: positive
+Time: 166.978581 s
+DR: 0.003500 (TP: 7 FN: 1993)
+Decrease threshold to 10.329647
+DR: 0.010000 (TP: 20 FN: 1980)
+Decrease threshold to 9.329647
+DR: 0.024500 (TP: 49 FN: 1951)
+Decrease threshold to 8.329647
+DR: 0.062000 (TP: 124 FN: 1876)
+Decrease threshold to 7.329647
+DR: 0.135000 (TP: 270 FN: 1730)
+Decrease threshold to 6.329647
+DR: 0.227500 (TP: 455 FN: 1545)
+Decrease threshold to 5.329647
+DR: 0.347500 (TP: 695 FN: 1305)
+Decrease threshold to 4.329647
+DR: 0.467500 (TP: 935 FN: 1065)
+Decrease threshold to 3.329647
+DR: 0.566500 (TP: 1133 FN: 867)
+Decrease threshold to 2.329647
+DR: 0.648500 (TP: 1297 FN: 703)
+Decrease threshold to 1.329647
+DR: 0.705500 (TP: 1411 FN: 589)
+Decrease threshold to 0.329647
+DR: 0.733000 (TP: 1466 FN: 534)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 48 iterations
+Iteration: 48
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.428844, dimension: 24859, error: 0.394402, misclassified: 1483, threshold: -461.000000, sign: positive
+Time: 151.069402 s
+DR: 0.001500 (TP: 3 FN: 1997)
+Decrease threshold to 10.544069
+DR: 0.008000 (TP: 16 FN: 1984)
+Decrease threshold to 9.544069
+DR: 0.018500 (TP: 37 FN: 1963)
+Decrease threshold to 8.544069
+DR: 0.045000 (TP: 90 FN: 1910)
+Decrease threshold to 7.544069
+DR: 0.100500 (TP: 201 FN: 1799)
+Decrease threshold to 6.544069
+DR: 0.172000 (TP: 344 FN: 1656)
+Decrease threshold to 5.544069
+DR: 0.276500 (TP: 553 FN: 1447)
+Decrease threshold to 4.544069
+DR: 0.398000 (TP: 796 FN: 1204)
+Decrease threshold to 3.544069
+DR: 0.519000 (TP: 1038 FN: 962)
+Decrease threshold to 2.544069
+DR: 0.609000 (TP: 1218 FN: 782)
+Decrease threshold to 1.544069
+DR: 0.677000 (TP: 1354 FN: 646)
+Decrease threshold to 0.544069
+DR: 0.720500 (TP: 1441 FN: 559)
+Evaluate FPR on validation set:
+FPR: 0.000813 (FP: 2 TN: 2458)
+
+Training AdaBoost with 49 iterations
+Iteration: 49
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.534377, dimension: 103925, error: 0.369497, misclassified: 555, threshold: -5.000000, sign: positive
+Time: 150.471055 s
+DR: 0.001500 (TP: 3 FN: 1997)
+Decrease threshold to 10.811257
+DR: 0.007000 (TP: 14 FN: 1986)
+Decrease threshold to 9.811257
+DR: 0.018000 (TP: 36 FN: 1964)
+Decrease threshold to 8.811257
+DR: 0.043000 (TP: 86 FN: 1914)
+Decrease threshold to 7.811257
+DR: 0.095000 (TP: 190 FN: 1810)
+Decrease threshold to 6.811257
+DR: 0.180000 (TP: 360 FN: 1640)
+Decrease threshold to 5.811257
+DR: 0.282500 (TP: 565 FN: 1435)
+Decrease threshold to 4.811257
+DR: 0.413000 (TP: 826 FN: 1174)
+Decrease threshold to 3.811257
+DR: 0.520000 (TP: 1040 FN: 960)
+Decrease threshold to 2.811257
+DR: 0.614500 (TP: 1229 FN: 771)
+Decrease threshold to 1.811257
+DR: 0.681500 (TP: 1363 FN: 637)
+Decrease threshold to 0.811257
+DR: 0.725000 (TP: 1450 FN: 550)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 50 iterations
+Iteration: 50
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.421967, dimension: 103868, error: 0.396046, misclassified: 521, threshold: 19.000000, sign: positive
+Time: 150.630659 s
+DR: 0.003000 (TP: 6 FN: 1994)
+Decrease threshold to 11.022241
+DR: 0.008500 (TP: 17 FN: 1983)
+Decrease threshold to 10.022241
+DR: 0.022000 (TP: 44 FN: 1956)
+Decrease threshold to 9.022241
+DR: 0.049500 (TP: 99 FN: 1901)
+Decrease threshold to 8.022241
+DR: 0.109500 (TP: 219 FN: 1781)
+Decrease threshold to 7.022241
+DR: 0.197000 (TP: 394 FN: 1606)
+Decrease threshold to 6.022241
+DR: 0.303000 (TP: 606 FN: 1394)
+Decrease threshold to 5.022241
+DR: 0.427500 (TP: 855 FN: 1145)
+Decrease threshold to 4.022241
+DR: 0.532000 (TP: 1064 FN: 936)
+Decrease threshold to 3.022241
+DR: 0.620500 (TP: 1241 FN: 759)
+Decrease threshold to 2.022241
+DR: 0.681000 (TP: 1362 FN: 638)
+Decrease threshold to 1.022241
+DR: 0.725000 (TP: 1450 FN: 550)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 51 iterations
+Iteration: 51
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.470427, dimension: 97123, error: 0.384515, misclassified: 1196, threshold: -49.000000, sign: positive
+Time: 150.405719 s
+DR: 0.003000 (TP: 6 FN: 1994)
+Decrease threshold to 11.257454
+DR: 0.009500 (TP: 19 FN: 1981)
+Decrease threshold to 10.257454
+DR: 0.022500 (TP: 45 FN: 1955)
+Decrease threshold to 9.257454
+DR: 0.049000 (TP: 98 FN: 1902)
+Decrease threshold to 8.257454
+DR: 0.099500 (TP: 199 FN: 1801)
+Decrease threshold to 7.257454
+DR: 0.173500 (TP: 347 FN: 1653)
+Decrease threshold to 6.257454
+DR: 0.281000 (TP: 562 FN: 1438)
+Decrease threshold to 5.257454
+DR: 0.389000 (TP: 778 FN: 1222)
+Decrease threshold to 4.257454
+DR: 0.497500 (TP: 995 FN: 1005)
+Decrease threshold to 3.257454
+DR: 0.597500 (TP: 1195 FN: 805)
+Decrease threshold to 2.257454
+DR: 0.663000 (TP: 1326 FN: 674)
+Decrease threshold to 1.257454
+DR: 0.709500 (TP: 1419 FN: 581)
+Decrease threshold to 0.257454
+DR: 0.738500 (TP: 1477 FN: 523)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 52 iterations
+Iteration: 52
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.466536, dimension: 103837, error: 0.385436, misclassified: 1313, threshold: 14.000000, sign: negative
+Time: 150.630865 s
+DR: 0.001000 (TP: 2 FN: 1998)
+Decrease threshold to 11.490722
+DR: 0.005000 (TP: 10 FN: 1990)
+Decrease threshold to 10.490722
+DR: 0.013500 (TP: 27 FN: 1973)
+Decrease threshold to 9.490722
+DR: 0.032000 (TP: 64 FN: 1936)
+Decrease threshold to 8.490722
+DR: 0.070000 (TP: 140 FN: 1860)
+Decrease threshold to 7.490722
+DR: 0.132500 (TP: 265 FN: 1735)
+Decrease threshold to 6.490722
+DR: 0.224000 (TP: 448 FN: 1552)
+Decrease threshold to 5.490722
+DR: 0.336000 (TP: 672 FN: 1328)
+Decrease threshold to 4.490722
+DR: 0.450000 (TP: 900 FN: 1100)
+Decrease threshold to 3.490722
+DR: 0.559000 (TP: 1118 FN: 882)
+Decrease threshold to 2.490722
+DR: 0.638500 (TP: 1277 FN: 723)
+Decrease threshold to 1.490722
+DR: 0.701500 (TP: 1403 FN: 597)
+Decrease threshold to 0.490722
+DR: 0.731500 (TP: 1463 FN: 537)
+Evaluate FPR on validation set:
+FPR: 0.001220 (FP: 3 TN: 2457)
+
+Training AdaBoost with 53 iterations
+Iteration: 53
+Evaluated: 105106/105106 features
+Trained WeakClassifier: alpha: 0.491835, dimension: 49011, error: 0.379461, misclassified: 448, threshold: -108.000000, sign: negative
+Time: 150.429002 s
+DR: 0.000500 (TP: 1 FN: 1999)
+Decrease threshold to 11.736639
+DR: 0.003500 (TP: 7 FN: 1993)
+Decrease threshold to 10.736639
+^C
+MacBook-Pro-di-Lorenzo:Debug lorenzocioni$
+MacBook-Pro-di-Lorenzo:Debug lorenzocioni$

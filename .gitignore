@@ -1,0 +1,12 @@
+/Debug/
+
+.project
+
+.cproject
+
+images/*
+dataset/*
+
+Servers/*
+
+RemoteSystemsTempFiles/.settings/org.eclipse.php.core.prefs

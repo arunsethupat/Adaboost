@@ -1,0 +1,7 @@
+\section{Il metodo di Viola e Jones}
+
+Il metodo di riconoscimento facciale proposto da Viola e Jones si basa su dei semplici classificatori lineari che operano su delle feature specifiche dell'immagine. Le feature utilizzate sono di tipo binario, molto buone per caratterizzare parti dell'immagine in cui si evidenzia un maggior contrasto: nel caso dei volti queste zone sono tipicamente il naso, gli occhi, etc.
+
+Per consentire di calcolare rapidamente questo tipo di features, Viola e Jones hanno introdotto una nuova rappresentazione dell'immagine chiamata \emph{immagine integrale}. Una volta calcolate queste si procede alla selezione di un loro sottoinsieme utilizzando una versione modificata dell'algoritmo AdaBoost. 
+
+Infine, per la classificazione, viene utilizzata una \emph{cascata di classificatori}. I classificatori sono suddivisi in più livelli rendendo possibile il riconoscimento in tempo reale.

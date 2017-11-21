@@ -1,0 +1,69 @@
+\section{Boosting}
+Una volta estratte le features all'interno di ciascuna detection window si procede con la sua classificazione. Per questa fase vengono usati una serie di semplici classificatori binari basati su una singola feature chiamati \emph{decision stumps}. 
+
+Come visto in precedenza, anche in una finestra relativamente piccola come una detection window 24 x 24, il numero di feature estratte per ciascuna di esse è molto elevato. Nonostante dunque siano molto veloci da calcolare, il tempo necessario sarebbe troppo per applicazioni in tempo reale. 
+
+Si procede dunque alla riduzione dell'insieme delle feature estratte: Viola e Jones utilizzano per questo motivo una versione modificata di AdaBoost per combinare insieme classificatori basati sulle migliori feature selezionate.
+
+\subsection{Decision stumps}
+
+I \emph{decision stumps} sono dei semplici classificatori binari lineari basati su un singolo valore di una feature. 
+
+Un generico classificatore $h$ è definito con una \emph{feature} $f$, una \emph{soglia} $\theta$ ed una \emph{polarità} (\emph{positiva} o  \emph{negativa}). La classificazione è data da:
+$$
+h(x, f, \theta, p) =
+\left\{
+\begin{array}{ll}
+1 & \mbox{se } p f(x) \leq p \theta \\
+-1 & \mbox{altrimenti}
+\end{array}
+\right.
+$$
+Questi classificatori sono chiamati \emph{weak classifiers}.
+
+\subsection{AdaBoost}
+
+Gli algoritmi di Boosting combinano insieme una serie di \emph{weak classifiers} per andare a formare uno \emph{strong classifier}. Il metodo standard è l'algoritmo di \emph{AdaBoost} (\emph{Adaptive Boosting}), un algoritmo iterativo che seleziona le features migliori in base ad un errore nei singoli classificatori.
+
+Ad un generico passo dell'algoritmo, la selezione della feature migliore dipende dai risultati della precedente iterazione, dando maggiore enfasi agli esempi che causano un più elevato \emph{error rate}.
+Questo è possibile assegnando a ciascun esempio del training set un peso normalizzato (inizialmente uniforme). Ad ogni iterazione dell'algoritmo il peso viene aggiornato per fare in modo di concentrarsi sugli esempi mal classificati nella precedente iterazione. Il risultato di una singola iterazione è la costruzione di un \emph{weak learner} $h_t$. L'errore $\epsilon_t$ del classificatore così definito è dato dalla somma dei pesi degli esempi classificati erroneamente.
+
+Definiamo inizialmente il numero di iterazioni $T$. L'algoritmo di AdaBoost modificato da Viola e Jones è definito come Algoritmo \ref{adaboost}.
+
+Dato $(x_1, y_1), \ldots, (x_{n+m}, y_{n+m})$, con $x \in X$ e $y \in \{-1, 1\}$, $n$ esempi \emph{positivi} e $m$ esempi \emph{negativi}:
+
+\begin{algorithm}
+\caption{AdaBoost (Viola e Jones)}\label{adaboost}
+\begin{algorithmic}
+\State - Inizializza il peso degli esempi positivi a $\frac{1}{2n}$ e quello degli esempi negativi a $\frac{1}{2m}$
+\For {$t = 1, \ldots, T$}
+\State - Normalizza i pesi così che la loro somma sia unitaria $$w_{i} = \frac{w_{i}}{\sum_{j = 1}^{n+m} w_{j}}$$
+\State - Scegli il miglior \emph{weak learner} $h_t$ tale che
+$$h_h = \arg \min_{h_j \in H} \epsilon_j \sum_{i = 1}^{n+m} w_{i} [y_i \neq h_j(x_i)]$$
+\State - Aggiorna i pesi degli esempi
+$$w_i = w_i \beta_{t}^{1 - c_i}$$
+dove $\beta_t = \frac{\epsilon_t}{1 - \epsilon_t}$ e $c_i$ vale 1 se l'esempio $i$-esimo è classificato correttamente, altrimenti vale 0
+\State - Calcola $\alpha_t = \log (\frac{1}{\beta_t}$
+\EndFor
+\State - Lo \emph{strong classifier} finale è dato da
+$$h(x) = \left\{
+\begin{array}{ll}
+1 & \mbox{se } \sum_{t = 1}^{T} \alpha_t h_t(x) \geq \frac{1}{2} \sum_{t = 1}^{T} \alpha_t \\
+-1 & \mbox{altrimenti}
+\end{array}
+\right.$$
+\end{algorithmic}
+\end{algorithm}
+La parte $\frac{1}{2} \sum_{t = 1}^{T} \alpha_t$ è detta \emph{soglia} del classificatore, ma si ottengono migliori risultati andando ad aggiustarla successivamente.
+
+\subsection{Scelta del miglior \emph{weak classifier}}
+
+Ad ogni iterazione dell'algoritmo si procede con la selezione della migliore feature che minimizza l'errore dato dalla somma degli esempi classificati erroneamente. Il tempo necessario per questa operazione è $N \times D$, dove $N$ è il numero di esempi e $D$ il numero di features.
+
+Grazie ad una particolare tecnica implementativa, proposta da Viola e Jones nell'articolo, il tempo di calcolo è unica
+
+\subsection{Considerazioni}
+
+Viola e Jones affermano che un classificatore basato su 200 feature estratte giunge ad ottimi risultati in termini di \emph{detection}, ma con un alto costo computazionale che non permette un suo utilizzo in tempo reale, questo a causa del gran numero di feature da calcolare in ciascuna posizione della finestra.
+
+Per ovviare a questo problema è stato proposto un nuovo approccio chiamato \emph{attentional cascade}, in cui una serie di \emph{strong classifiers} sono disposti in cascata in modo tale che siano via via più precisi.
